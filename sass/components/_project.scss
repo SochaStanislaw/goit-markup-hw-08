@@ -1,0 +1,25 @@
+@import '../utils/vars';
+@import '../utils/transition-style';
+
+.project__wrapper {
+    position: relative;
+    width: 370px;
+    height: 294px;
+    overflow: hidden;
+}
+
+.project__link--active {
+    position: absolute;
+    padding: 49px 45px 49px 24px;
+    width: 100%;
+    height: 100%;
+    background-color: getColor('bg-active');
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: getColor('font-project');
+    text-decoration: none;
+    transform: translateY(1);
+    transition: transform getAnimation('global-theme');
+}

@@ -1,0 +1,33 @@
+@import '../utils/vars';
+
+.social-icons {
+
+    &__heading {
+        margin: 12px 0 20px 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1.43;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        color: getColor('font-footer-light');
+    }
+
+    &__wrapper {
+        display: flex;
+
+        &--section-no-4-style {
+            justify-content: space-between;
+            padding: 16px 32px 18px 32px;
+        }
+        
+        &--footer-display {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        &--footer-style {
+            gap: 10px;
+            list-style-type: none;
+        }
+    }
+}

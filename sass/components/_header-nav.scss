@@ -1,0 +1,52 @@
+@import '../utils/vars';
+@import '../utils/borders-styles';
+@import '../utils/transition-style';
+
+.header-nav {
+    width: 254px;
+    margin-right: 315px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: getColor('font-header-dark');
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+    
+    &__underline-global-style::after {
+        position: absolute;
+        top: 45.5px;
+        left: 0;
+        content: '';
+        border-bottom: getB('b-nav');
+        border-radius: getBr('br-nav');
+    }
+    
+    &__underline-agnecja-style::after {
+        width: 53px;
+    }
+    
+    &__underline-portfolio-style::after {
+        width: 58px;
+    }
+    
+    &__item--active-color {
+        position: relative;
+        color: getColor('font-active');
+    }
+
+    &__link {
+        color: getColor('font-link');
+        text-decoration: none;
+
+        &--active:hover,
+        &--active:focus {
+            color: getColor('font-active');
+            transition: getAnimation('global-theme');
+        }
+    }
+}

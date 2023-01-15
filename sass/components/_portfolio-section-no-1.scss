@@ -1,0 +1,35 @@
+@import '../utils/vars';
+@import '../utils/borders-styles';
+@import '../utils/transition-style';
+
+.portfolio-section-no-1 {
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        padding-top: 94px;
+        list-style-type: none;
+    }
+
+    &__btn {
+        padding: 6px 22px;
+        text-align: center;
+        background-color: getColor('bg-btn-filter');
+        border: getB('b-btn-filter');
+        border-radius: getBr('br-btn-filter');
+        font-weight: 500;
+        line-height: 1.625;        
+        letter-spacing: 0.03em;
+        color: getColor('font-global-dark');
+        cursor: pointer;
+
+        &--active:hover,
+        &--active:focus {
+            background-color: getColor('bg-active');
+            color: getColor('font-btn-filter-active');
+            box-shadow: getBs('bs-btn-filter');
+            transition: getAnimation('global-theme');
+        }
+    }
+}

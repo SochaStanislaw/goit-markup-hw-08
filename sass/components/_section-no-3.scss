@@ -1,0 +1,42 @@
+@import '../utils/vars';
+
+.section-no-3 {
+
+    &__heading {
+        margin-bottom: 50px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        color: getColor('font-global-dark');
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px 0 15px;
+        height: 294px;
+        list-style-type: none;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__description-bg {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 0%;
+        width: 370px;
+        height: 70px;
+        background: getColor('bg-section-no-3');
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        color: getColor('font-section-no-2');
+    }
+}

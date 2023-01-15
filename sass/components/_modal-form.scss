@@ -1,0 +1,136 @@
+@import '../utils/vars';
+@import '../utils/borders-styles';
+@import '../utils/transition-style';
+
+.modal-form {
+    position: absolute;
+    top: 75px;
+    left: 40px;
+    width: 448px;
+    height: 342px;
+
+    &--display {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0.01em;
+        color: getColor('font-global-light');
+        cursor: pointer;
+    }
+    
+    &__input {
+        width: 100%;
+        height: 40px;
+        border: getB('b-modal-form');
+        border-radius: getBr('br-form');
+        padding: 0 12px 0 42px;
+        margin: 4px 0 10px 0;
+    }
+
+    &__input--active:hover,
+    &__input--active:focus {
+        outline: none;
+        border: getB('b-form-active');
+        border-radius: getBr('br-form');
+        transition: getAnimation('global-theme');
+    }
+    
+    &__input--active:hover + &__icon,
+    &__input--active:focus + &__icon {
+        fill: getColor('bg-active');
+        transition: getAnimation('global-theme');
+    }
+    
+    &__textarea {
+        width: 100%;
+        height: 120px;
+        margin-top: 4px;
+        padding: 12px 16px 12px 16px;
+        border: getB('b-modal-form');
+        border-radius: getBr('br-form');
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        resize: none;
+    }
+    
+    &__textarea::placeholder {
+        color: getColor('font-global-light');
+    }
+    
+    &__icon {
+        position: absolute;
+        left: 12px;
+    
+        &--person {
+        top: 29px;
+        }
+    
+        &--phone {
+        top: 97px;
+        }
+    
+        &--email {
+        top: 165px;
+        }
+    }
+    
+    &__regulation-agree-label {
+        position: absolute;
+        top: calc(342px + 20px);
+        left: 39px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: getColor('font-global-light');
+    }
+    
+    &__link {
+        color: getColor('font-active');
+
+        &--position {
+        position: absolute;
+        top: 367px;
+        left: 15px;
+        }
+    }
+
+    &__checkbox {
+        width: 16px;
+        height: 15px;
+        z-index: 2;
+        opacity: 0;
+    
+
+        &--position {
+            position: absolute;
+            top: 367px;
+            left: 15px;
+        }
+
+        &--empty {
+            z-index: 0;
+            opacity: 1;
+        }
+        
+        &--blue {    
+            z-index: 1;
+            opacity: 0;
+        }
+    }        
+
+    &__checkbox:checked + &__checkbox--blue {
+        opacity: 1;
+    }
+    
+    &__checkbox:hover {
+        transition: getAnimation('global-theme');
+        cursor: pointer;
+    }
+}

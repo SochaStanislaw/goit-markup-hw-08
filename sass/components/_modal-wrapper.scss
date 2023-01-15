@@ -1,0 +1,15 @@
+@import '../utils/vars';
+@import '../utils/borders-styles';
+
+.modal-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    background-color: getColor('bg-modal');
+    border-radius: getBr('br-form');
+    box-shadow: getBs('bs-modal');
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}

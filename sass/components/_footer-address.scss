@@ -1,0 +1,40 @@
+@import '../utils/vars';
+@import '../utils/transition-style';
+
+.footer-address {
+
+    &__wrapper {
+        margin-top: 20px;
+        font-style: normal;    
+    }
+
+    &__list {
+        list-style-type: none;
+    }
+
+    &__item {
+        margin-top: 9px;
+
+        &--city {
+            margin-top: 20px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+
+        &--city {
+            color: getColor('font-footer-light');
+        }
+
+        &--contact {
+            color: getColor('font-footer-dark');
+        }
+
+        &--active:hover,
+        &--active:focus {
+            color: getColor('font-active');
+            transition: getAnimation('global-theme');
+        }
+    }
+}

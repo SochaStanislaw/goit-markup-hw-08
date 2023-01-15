@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+
+<defs>
+<symbol id="icon-checkbox-blue" viewBox="0 0 34 32">
+<path fill="#2196f3" d="M4.3 0h25.6C32.2 0 34 2 34 4.3v23.4c0 2.4-1.9 4.3-4.2 4.3H4.3C1.9 32 0 30 0 27.7V4.3C0 1.9 2 0 4.3 0z" style="fill:var(--color1, #2196f3)"/>
+<path fill="#fff" stroke="#fff" stroke-width=".4" d="m8.4 16.5-.1-.1-2.2 2 7.8 7.5 16.3-15.6-2.2-2-14.1 13.4-5.5-5.2z" style="fill:var(--color2, #fff);stroke:var(--color2, #fff)"/>
+</symbol>
+
+<symbol id="icon-checkbox-empty" viewBox="0 0 34 32">
+<path d="M30.3 3.6v24.8H3.8V3.6h26.5zm0-3.6H3.8C1.8 0 0 1.6 0 3.6v24.8c0 2 1.7 3.6 3.8 3.6h26.5c2.1 0 3.8-1.6 3.8-3.6V3.6c0-2-1.7-3.6-3.8-3.6z"/>
+</symbol>
+</defs>
+</svg>

@@ -1,0 +1,24 @@
+@import '../utils/vars';
+
+.section-no-1 {
+    text-align: center;
+    background-color: getColor('bg-section-no-1');
+    background-image: 
+    linear-gradient(rgba(47, 48, 58, 0.4)50%, rgba(47, 48, 58, 0.4)50%), 
+    url(../images/background-section-no-1/bg-image.jpg);
+
+    &__heading-padding {
+        padding: 200px 252px 200px 252px;
+    }
+        
+    &__heading-style {
+        margin-bottom: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        color: getColor('font-section-no-1')
+    }
+}

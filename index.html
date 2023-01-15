@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio - Main Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- MODAL-BOX-BEGIN -->
+    <!-- MODAL-BOX-OPEN-EFFECTS-BEGIN -->
+    <div class="modal is-hidden backdrop" data-modal>
+      <!-- MODAL-WRAPPER-BEGIN -->
+      <div class="modal-wrapper">
+        <!-- MODAL-BOX-CLOSE-BTN-ICON-BEGIN -->
+        <button
+          class="modal-close-btn modal-close-btn--active"
+          data-modal-close
+        >
+          <svg class="modal-close-btn__icon">
+            <use
+              href="./images/SVG/modal-box-close.svg#icon-close-black-18dp-2-1"
+              width="18px"
+              height="18px"
+              x="4.5px"
+              y="6px"
+            ></use>
+          </svg>
+        </button>
+        <!-- MODAL-BOX-CLOSE-BTN-ICON-END -->
+
+        <!-- MODAL-BOX-HEADING-BEGIN -->
+        <h3 class="modal-box__heading">
+          Zostaw swoje dane w formularzu poniżej
+        </h3>
+        <!-- MODAL-BOX-HEADING-END -->
+
+        <!-- MODAL-FORM-WRAPPER-BEGIN -->
+        <div class="modal-form">
+          <!-- MODAL-FORM-BEGIN -->
+          <form name="modal-form" autocomplete="on">
+            <!-- MODAL-FORM-FIRSTNAME-BEGIN -->
+            <div class="modal-form--display">
+              <label class="modal-form__label" for="modal-form-firstname"
+                >Imię</label
+              >
+              <input
+                class="modal-form__input modal-form__input--active"
+                id="modal-form-firstname"
+                type="text"
+                name="name"
+                required
+              />
+              <svg
+                class="modal-form__icon modal-form__icon--person"
+                width="18px"
+                height="18px"
+              >
+                <use
+                  href="./images/SVG/modal-form-icons.svg#icon-person-black-18dp-1"
+                ></use>
+              </svg>
+            </div>
+            <!-- MODAL-FORM-FIRSTNAME-END -->
+
+            <!-- MODAL-FORM-PHONE-NUMBER-BEGIN -->
+            <div class="modal-form--display">
+              <label class="modal-form__label" for="modal-form-phone-number"
+                >Telefon</label
+              >
+              <input
+                class="modal-form__input modal-form__input--active"
+                id="modal-form-phone-number"
+                type="tel"
+                name="modal-form-phone-number"
+                required
+              />
+              <svg
+                class="modal-form__icon modal-form__icon--phone"
+                width="18px"
+                height="18px"
+              >
+                <use
+                  href="./images/SVG/modal-form-icons.svg#icon-phone-black-18dp-1"
+                ></use>
+              </svg>
+            </div>
+            <!-- MODAL-FORM-PHONE-NUMBER-END -->
+
+            <!-- MODAL-FORM-EMAIL-BEGIN -->
+            <div class="modal-form--display">
+              <label class="modal-form__label" for="modal-form-email"
+                >Email</label
+              >
+              <input
+                class="modal-form__input modal-form__input--active"
+                id="modal-form-email"
+                type="email"
+                name="modal-form-email"
+                required
+              />
+              <svg
+                class="modal-form__icon modal-form__icon--email"
+                width="18px"
+                height="18px"
+              >
+                <use
+                  href="./images/SVG/modal-form-icons.svg#icon-email-black-18dp-1"
+                ></use>
+              </svg>
+            </div>
+            <!-- MODAL-FORM-EMAIL-BEGIN -->
+
+            <!-- MODAL-FORM-COMMENT-BEGIN -->
+            <div class="modal-form--display">
+              <label class="modal-form__label" for="modal-form-comment"
+                >Komentarz</label
+              >
+              <textarea
+                class="modal-form__textarea modal-form__input--active"
+                id="modal-form-comment"
+                type="text"
+                name="modal-form-comment"
+                placeholder="Wprowadź tekst"
+                rows="8"
+              ></textarea>
+            </div>
+            <!-- MODAL-FORM-COMMENT-END -->
+
+            <!-- MODAL-FORM-REGULATION-AGRRE-BEGIN -->
+            <input
+              class="modal-form__checkbox modal-form__checkbox--position"
+              id="regulation&politics-confirmation"
+              name="regulation&politics-confirmation"
+              type="checkbox"
+              required
+            />
+            <svg
+              class="modal-form__checkbox--blue modal-form__checkbox--position"
+              width="16px"
+              height="15px"
+            >
+              <use
+                href="./images/SVG/modal-box-checkbox.svg#icon-checkbox-blue"
+              ></use>
+            </svg>
+            <svg
+              class="modal-form__checkbox--empty modal-form__checkbox--position"
+              width="16px"
+              height="15px"
+            >
+              <use
+                href="./images/SVG/modal-box-checkbox.svg#icon-checkbox-empty"
+              ></use>
+            </svg>
+            <label
+              class="modal-form__regulation-agree-label"
+              for="regulation&politics-confirmation"
+            >
+              Oświadczam iż akceptuję
+              <a
+                class="modal-form__link"
+                href="https://www.google.pl/"
+                target="_blank"
+                >Regulamin</a
+              >
+              i
+              <a
+                class="modal-form__link"
+                href="https://www.google.pl/"
+                target="_blank"
+                >Politykę Prywatności</a
+              >.
+            </label>
+            <!-- MODAL-FORM-REGULATION-AGRRE-END -->
+
+            <!-- MODAL-FORM-BTN-SUBMIT-BEGIN -->
+            <button
+              class="btn-blue btn-blue--modal-submit btn-blue--active"
+              type="submit"
+            >
+              Wyślij
+            </button>
+            <!-- MODAL-FORM-BTN-SUBMIT-END -->
+          </form>
+        </div>
+        <!-- MODAL-FORM-WRAPPER-END -->
+      </div>
+      <!-- MODAL-WRAPPER-END -->
+    </div>
+    <!-- MODAL-BOX-OPEN-EFFECTS-END -->
+    <!-- MODAL-BOX-END -->
+
+    <!-- HEADER-BAR-BEGIN -->
+    <header class="header-bar-border">
+      <!-- CONTAINER-1200px-BEGIN -->
+      <div class="container">
+        <!-- HEADER-BAR-WRAPPER-BEGIN -->
+        <div class="header-bar-wrapper">
+          <!-- WEB-PAGE-TITLE-STYLE-BEGIN -->
+          <a class="web-title web-title--header-margin" href="./index.html"
+            >Web<span class="web-title--header-color">Studio</span></a
+          >
+          <!-- WEB-PAGE-TITLE-STYLE-END -->
+
+          <!-- HEADER-NAVIGATION-BEGIN -->
+          <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li
+                class="header-nav__underline-global-style header-nav__underline-agnecja-style header-nav__item--active-color"
+              >
+                <a
+                  class="header-nav__link header-nav__link--active"
+                  href="./index.html"
+                  >Agencja</a
+                >
+              </li>
+              <li>
+                <a
+                  class="header-nav__link header-nav__link--active"
+                  href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="header-nav__underline-global-style">
+                <a class="header-nav__link header-nav__link--active" href=""
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <!-- HEADER-NAVIGATION-END -->
+
+          <!-- HEADER-CONTACTS-BEGIN -->
+          <ul class="header-contact">
+            <li>
+              <a
+                class="header-contact__link header-contact__link--active"
+                href="mailto:info@devstudio.com"
+              >
+                <svg width="16px" height="12px">
+                  <use href="./images/SVG/header-icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a
+                class="header-contact__link header-contact__link--active"
+                href="tel:+48111111111"
+              >
+                <svg width="10px" height="16px">
+                  <use
+                    href="./images/SVG/header-icons.svg#icon-smartphone"
+                  ></use>
+                </svg>
+                +48 111 111 111</a
+              >
+            </li>
+          </ul>
+          <!-- HEADER-CONTACTS-END -->
+        </div>
+        <!-- HEADER-BAR-WRAPPER-END -->
+      </div>
+      <!-- CONTAINER-1200px-END -->
+    </header>
+    <!-- HEADER-BAR-END -->
+
+    <!-- MAIN-BEGIN -->
+    <main>
+      <!-- SECTION-NO-1-BEGIN -->
+      <!-- SECTION'-SPACE-BEETWEN-BEGIN -->
+      <div class="section">
+        <!-- SECTION-NO-1-BG-STYLE-BEGIN -->
+        <section class="section-no-1">
+          <!-- CONTAINER-1200px-BEGIN -->
+          <div class="container">
+            <!-- SECTION-NO-1-HEADING-BEGIN -->
+            <div class="section-no-1__heading-padding">
+              <h1 class="section-no-1__heading-style">
+                efektywne rozwiązania dla waszego biznesu
+              </h1>
+              <button
+                class="btn-blue btn-blue--active"
+                type="button"
+                data-modal-open
+              >
+                Zamów usługę
+              </button>
+            </div>
+            <!-- SECTION-NO-1-HEADING-END -->
+          </div>
+          <!-- CONTAINER-1200px-END -->
+        </section>
+        <!-- SECTION-NO-1-BG-STYLE-END -->
+      </div>
+      <!-- SECTION'-SPACE-BEETWEN-END -->
+      <!-- SECTION-NO-1-END -->
+
+      <!-- SECTION-NO-2-BEGIN -->
+      <!-- SECTION'-SPACE-BEETWEN-BEGIN -->
+      <section class="section">
+        <!-- CONTAINER-1200px-BEGIN -->
+        <div class="container">
+          <!-- SECTION-NO-2-LIST-BEGIN -->
+
+          <ul class="section-no-2__list">
+            <li>
+              <svg class="section-no-2__icon">
+                <use
+                  href="./images/SVG/nasze-zalety-icons.svg#icon-antenna-1"
+                  width="70px"
+                  height="70px"
+                  x="100"
+                  y="25"
+                ></use>
+              </svg>
+              <div class="section-no-2__text-wrapper">
+                <h3 class="section-no-2__heading">lorem ipsum</h3>
+                <p class="section-no-2__paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </div>
+            </li>
+            <li>
+              <svg class="section-no-2__icon">
+                <use
+                  href="./images/SVG/nasze-zalety-icons.svg#icon-clock-1"
+                  width="70px"
+                  height="70px"
+                  x="100"
+                  y="25"
+                ></use>
+              </svg>
+              <div class="section-no-2__text-wrapper">
+                <h3 class="section-no-2__heading">lorem ipsum</h3>
+                <p class="section-no-2__paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </div>
+            </li>
+            <li>
+              <svg class="section-no-2__icon">
+                <use
+                  href="./images/SVG/nasze-zalety-icons.svg#icon-diagram-1"
+                  width="70px"
+                  height="70px"
+                  x="100"
+                  y="25"
+                ></use>
+              </svg>
+              <div class="section-no-2__text-wrapper">
+                <h3 class="section-no-2__heading">lorem ipsum</h3>
+                <p class="section-no-2__paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </div>
+            </li>
+            <li>
+              <svg class="section-no-2__icon">
+                <use
+                  href="./images/SVG/nasze-zalety-icons.svg#icon-astronaut-1"
+                  width="70px"
+                  height="70px"
+                  x="100"
+                  y="25"
+                ></use>
+              </svg>
+              <div class="section-no-2__text-wrapper">
+                <h3 class="section-no-2__heading">lorem ipsum</h3>
+                <p class="section-no-2__paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </div>
+            </li>
+          </ul>
+          <!-- SECTION-NO-2-LIST-END -->
+        </div>
+        <!-- CONTAINER-1200px-END -->
+      </section>
+      <!-- SECTION'-SPACE-BEETWEN-END -->
+      <!-- SECTION-NO-2-END -->
+
+      <!-- SECTION-NO-3-BEGIN -->
+      <!-- SECTION'-SPACE-BEETWEN-BEGIN -->
+      <section class="section section-no-3-style">
+        <!-- CONTAINER-1200px-BEGIN -->
+        <div class="container">
+          <!-- SECTION-NO-3-HEADING-BEGIN -->
+          <h2 class="section-no-3__heading">Czym się zajmujemy</h2>
+          <!-- SECTION-NO-3-HEADING-END -->
+          <!-- SECTION-NO-3-LIST-BEGIN -->
+          <ul class="section-no-3__list">
+            <li class="section-no-3__item">
+              <img
+                src="images/box/box_1.jpg"
+                alt="computer work 1"
+                title="computer work 1"
+                width="370"
+                height="294"
+              />
+              <div class="section-no-3__description-bg">
+                aplikacje komputerowe
+              </div>
+            </li>
+            <li class="section-no-3__item">
+              <img
+                src="images/box/box_2.jpg"
+                alt="computer work 2"
+                title="computer work 2"
+                width="370"
+                height="294"
+              />
+              <div class="section-no-3__description-bg">aplikacje mobilne</div>
+            </li>
+            <li class="section-no-3__item">
+              <img
+                src="images/box/box_3.jpg"
+                alt="computer work 3"
+                title="computer work 3"
+                width="370"
+                height="294"
+              />
+              <div class="section-no-3__description-bg">
+                aplikacje komputerowe
+              </div>
+            </li>
+          </ul>
+          <!-- SECTION-NO-3-LIST-END -->
+        </div>
+        <!-- CONTAINER-1200px-END -->
+      </section>
+      <!-- SECTION'-SPACE-BEETWEN-END -->
+      <!-- SECTION-NO-3-END -->
+
+      <!-- SECTION-NO-4-BEGIN -->
+      <!-- SECTION'-SPACE-BEETWEN-BEGIN -->
+      <section class="section section-no-4">
+        <!-- CONTAINER-1200px-BEGIN -->
+        <div class="container">
+          <!-- SECTION-NO-4-HEADING-BEGIN -->
+          <h2 class="section-no-4__heading">Nasz zespół</h2>
+          <!-- SECTION-NO-4-HEADING-END -->
+
+          <!-- SECTION-NO-4-LIST-BEGIN -->
+          <ul class="section-no-4__list section-no-4-content-box">
+            <li class="section-no-4__item">
+              <img
+                src="images/team_card/team_card_1.jpg"
+                alt="John Doe - Product Designer"
+                title="John Doe - Product Designer"
+                width="270"
+                height="260"
+              />
+
+              <!-- TEAM-MEMBER-DESCRIPTION-BEGIN -->
+              <div class="section-no-4__text-wrapper">
+                <h3 class="section-no-4__team-member-name">John Doe</h3>
+                <p class="section-no-4__team-member-profession">
+                  Product Designer
+                </p>
+              </div>
+              <!-- TEAM-MEMBER-DESCRIPTION-END -->
+
+              <!-- SOCIAL-MEDIA-ICONS-WRAPPER-BEGIN -->
+              <div
+                class="social-icons__wrapper social-icons__wrapper--section-no-4-style"
+              >
+                <a
+                  class="social-icon social-icon--section-no-4-color social-icon--active"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <svg width="44px" height="44px">
+                    <use
+                      href="./images/SVG/nasz zespół-social icons.svg#icon-instagram-2"
+                      width="20px"
+                      x="12px"
+                    ></use>
+                  </svg>
+                </a>
+                <a
+                  class="social-icon social-icon--section-no-4-color social-icon--active"
+                  href="https://twitter.com/"
+                  target="_blank"
+                >
+                  <svg width="44px" height="44px">
+                    <use
+                      href="./images/SVG/nasz zespół-social icons.svg#icon-twitter-1"
+                      width="20px"
+                      x="12px"
+                    ></use>
+                  </svg>
+                </a>
+                <a
+                  class="social-icon social-icon--section-no-4-color social-icon--active"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <svg width="44px" height="44px">
+                    <use
+                      href="./images/SVG/nasz zespół-social icons.svg#icon-facebook-1"
+                      width="20px"
+                      x="12px"
+                    ></use>
+                  </svg>
+                </a>
+                <a
+                  class="social-icon social-icon--section-no-4-color social-icon--active"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                >
+                  <svg width="44px" height="44px">
+                    <use
+                      href="./images/SVG/nasz zespół-social icons.svg#icon-linkedin-1"
+                      width="20px"
+                      x="12px"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+              <!-- SOCIAL-MEDIA-ICONS-WRAPPER-END -->
+            </li>
+            <li class="section-no-4__item">
+              <img
+                src="images/team_card/team_card_2.jpg"
+                alt="John Doe - Frontend Developer"
+                title="John Doe - Frontend Developer"
+                width="270"
+                height="260"
+              />
+
+              <!-- TEAM-MEMBER-DESCRIPTION-BEGIN -->
+              <div class="section-no-4__text-wrapper">
+                <h3 class="section-no-4__team-member-name">John Doe</h3>
+                <p class="section-no-4__team-member-profession">
+                  Frontend Developer
+                </p>
+              </div>
+              <!-- TEAM-MEMBER-DESCRIPTION-END -->
+
+              <!-- SOCIAL-MEDIA-ICONS-WRAPPER-BEGIN -->
+              <div
+                class="social-icons__wrapper social-icons__wrapper--section-no-4-style"
+              >
+                <a
+                  class="social-icon social-icon--section-no-4-color social-icon--active"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <svg width="44px" height="44px">
+                    <use
+                      href="./images/SVG/nasz zespół-social icons.svg#icon-instagram-2"
+                      width="20px"
+                      x="12px"
+                    ></use>
+                  </svg>
+                </a>
+                <a
+                  class="social-icon social-icon--section-no-4-color social-icon--active"
+                  href="https://twitter.com/"
+                  target="_blank"
+                >
+                  <svg width="44px" height="44px">
+                    <use
+                      href="./images/SVG/nasz zespół-social icons.svg#icon-twitter-1"
+                      width="20px"
+                      x="12px"
+                    ></use>
+                  </svg>
+                </a>
+                <a
+                  class="social-icon social-icon--section-no-4-color social-icon--active"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <svg width="44px" height="44px">
+                    <use
+                      href="./images/SVG/nasz zespół-social icons.svg#icon-facebook-1"
+                      width="20px"
+                      x="12px"
+                    ></use>
+                  </svg>
+                </a>
+                <a
+                  class="social-icon social-icon--section-no-4-color social-icon--active"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                >
+                  <svg width="44px" height="44px">
+                    <use
+                      href="./images/SVG/nasz zespół-social icons.svg#icon-linkedin-1"
+                      width="20px"
+                      x="12px"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+              <!-- SOCIAL-MEDIA-ICONS-WRAPPER-END -->
+            </li>
+            <li class="section-no-4__item">
+              <img
+                src="images/team_card/team_card_3.jpg"
+                alt="John Doe - Marketing"
+                title="John Doe - Marketing"
+                width="270"
+                height="260"
+              />
+
+              <!-- TEAM-MEMBER-DESCRIPTION-BEGIN -->
+              <div class="section-no-4__text-wrapper">
+                <h3 class="section-no-4__team-member-name">John Doe</h3>
+                <p class="section-no-4__team-member-profession">Marketing</p>
+              </div>
+              <!-- TEAM-MEMBER-DESCRIPTION-END -->
+
+              <!-- SOCIAL-MEDIA-ICONS-WRAPPER-BEGIN -->
+              <div
+                class="social-icons__wrapper social-icons__wrapper--section-no-4-style"
+              >
+                <a
+                  class="social-icon social-icon--section-no-4-color social-icon--active"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <svg width="44px" height="44px">
+                    <use
+                      href="./images/SVG/nasz zespół-social icons.svg#icon-instagram-2"
+                      width="20px"
+                      x="12px"
+                    ></use>
+                  </svg>
+                </a>
+                <a
+                  class="social-icon social-icon--section-no-4-color social-icon--active"
+                  href="https://twitter.com/"
+                  target="_blank"
+                >
+                  <svg width="44px" height="44px">
+                    <use
+                      href="./images/SVG/nasz zespół-social icons.svg#icon-twitter-1"
+                      width="20px"
+                      x="12px"
+                    ></use>
+                  </svg>
+                </a>
+                <a
+                  class="social-icon social-icon--section-no-4-color social-icon--active"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <svg width="44px" height="44px">
+                    <use
+                      href="./images/SVG/nasz zespół-social icons.svg#icon-facebook-1"
+                      width="20px"
+                      x="12px"
+                    ></use>
+                  </svg>
+                </a>
+                <a
+                  class="social-icon social-icon--section-no-4-color social-icon--active"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                >
+                  <svg width="44px" height="44px">
+                    <use
+                      href="./images/SVG/nasz zespół-social icons.svg#icon-linkedin-1"
+                      width="20px"
+                      x="12px"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+              <!-- SOCIAL-MEDIA-ICONS-WRAPPER-END -->
+            </li>
+            <li class="section-no-4__item">
+              <img
+                src="images/team_card/team_card_4.jpg"
+                alt="John Doe - UI Designer"
+                title="John Doe - UI Designer"
+                width="270"
+                height="260"
+              />
+
+              <!-- TEAM-MEMBER-DESCRIPTION-BEGIN -->
+              <div class="section-no-4__text-wrapper">
+                <h3 class="section-no-4__team-member-name">John Doe</h3>
+                <p class="section-no-4__team-member-profession">UI Designer</p>
+              </div>
+              <!-- TEAM-MEMBER-DESCRIPTION-END -->
+
+              <!-- SOCIAL-MEDIA-ICONS-WRAPPER-BEGIN -->
+              <div
+                class="social-icons__wrapper social-icons__wrapper--section-no-4-style"
+              >
+                <a
+                  class="social-icon social-icon--section-no-4-color social-icon--active"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <svg width="44px" height="44px">
+                    <use
+                      href="./images/SVG/nasz zespół-social icons.svg#icon-instagram-2"
+                      width="20px"
+                      x="12px"
+                    ></use>
+                  </svg>
+                </a>
+                <a
+                  class="social-icon social-icon--section-no-4-color social-icon--active"
+                  href="https://twitter.com/"
+                  target="_blank"
+                >
+                  <svg width="44px" height="44px">
+                    <use
+                      href="./images/SVG/nasz zespół-social icons.svg#icon-twitter-1"
+                      width="20px"
+                      x="12px"
+                    ></use>
+                  </svg>
+                </a>
+                <a
+                  class="social-icon social-icon--section-no-4-color social-icon--active"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <svg width="44px" height="44px">
+                    <use
+                      href="./images/SVG/nasz zespół-social icons.svg#icon-facebook-1"
+                      width="20px"
+                      x="12px"
+                    ></use>
+                  </svg>
+                </a>
+                <a
+                  class="social-icon social-icon--section-no-4-color social-icon--active"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                >
+                  <svg width="44px" height="44px">
+                    <use
+                      href="./images/SVG/nasz zespół-social icons.svg#icon-linkedin-1"
+                      width="20px"
+                      x="12px"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+              <!-- SOCIAL-MEDIA-ICONS-WRAPPER-END -->
+            </li>
+          </ul>
+        </div>
+        <!-- CONTAINER-1200px-END -->
+      </section>
+      <!-- SECTION'-SPACE-BEETWEN-END -->
+      <!-- SECTION-NO-4-END -->
+
+      <!-- SECTION-NO-5-BEGIN -->
+      <!-- SECTION'-SPACE-BEETWEN-BEGIN -->
+      <section class="section">
+        <!-- CONTAINER-1200px-BEGIN -->
+        <div class="container">
+          <!-- SECTION-NO-5-HEADING-BEGIN -->
+          <h2 class="section-no-5__heading">Nasi klienci</h2>
+          <!-- SECTION-NO-5-HEADING-END -->
+
+          <!-- SECTION-NO-5-CUSTOMERS'-LOGOS-WRAPPER-BEGIN -->
+          <div class="section-no-5__logos-wrapper">
+            <a
+              class="section-no-5__logo section-no-5__logo--active"
+              href="https://www.google.com/"
+              target="_blank"
+            >
+              <svg width="106px" height="60px">
+                <use href="./images/SVG/nasi-klienci.svg#icon-Logo-1"></use>
+              </svg>
+            </a>
+            <a
+              class="section-no-5__logo section-no-5__logo--active"
+              href="https://www.google.com/"
+              target="_blank"
+            >
+              <svg width="106px" height="60px">
+                <use href="./images/SVG/nasi-klienci.svg#icon-Logo-2"></use>
+              </svg>
+            </a>
+            <a
+              class="section-no-5__logo section-no-5__logo--active"
+              href="https://www.google.com/"
+              target="_blank"
+            >
+              <svg width="106px" height="60px">
+                <use href="./images/SVG/nasi-klienci.svg#icon-Logo-3"></use>
+              </svg>
+            </a>
+            <a
+              class="section-no-5__logo section-no-5__logo--active"
+              href="https://www.google.com/"
+              target="_blank"
+            >
+              <svg width="106px" height="60px">
+                <use href="./images/SVG/nasi-klienci.svg#icon-Logo-4"></use>
+              </svg>
+            </a>
+            <a
+              class="section-no-5__logo section-no-5__logo--active"
+              href="https://www.google.com/"
+              target="_blank"
+            >
+              <svg width="106px" height="60px">
+                <use href="./images/SVG/nasi-klienci.svg#icon-Logo-5"></use>
+              </svg>
+            </a>
+            <a
+              class="section-no-5__logo section-no-5__logo--active"
+              href="https://www.google.com/"
+              target="_blank"
+            >
+              <svg width="106px" height="60px">
+                <use href="./images/SVG/nasi-klienci.svg#icon-Logo-6"></use>
+              </svg>
+            </a>
+          </div>
+          <!-- SECTION-NO-5-CUSTOMERS-WRAPPER-END -->
+        </div>
+        <!-- CONTAINER-1200px-END -->
+      </section>
+      <!-- SECTION'-SPACE-BEETWEN-END -->
+      <!-- SECTION-NO-5-END -->
+    </main>
+
+    <!-- FOOTER-BAR-BEGIN -->
+    <footer class="footer-bar">
+      <!-- FOOTER-BAR-WRAPPER-BEGIN -->
+      <div class="footer-bar__wrapper">
+        <!-- CONTAINER-1200px-BEGIN -->
+        <div class="container">
+          <!-- WEB-PAGE-TITLE-STYLE-BEGIN -->
+          <a class="web-title" href="./index.html"
+            >Web<span class="web-title--footer-color">Studio</span></a
+          >
+          <!-- WEB-PAGE-TITLE-STYLE-END -->
+
+          <!-- FOOTER-BAR-ADDRESS'-LIST-BEGIN -->
+          <address class="footer-address__wrapper">
+            <ul class="footer-address__list">
+              <li class="footer-address__item--city">
+                <a
+                  class="footer-address__link footer-address__link--city footer-address__link--active"
+                  href="https://www.google.pl/maps/place/al.+Jerozolimskie+21,+00-508+Warszawa/@52.2305319,21.013843,480m/data=!3m2!1e3!4b1!4m5!3m4!1s0x471eccf3e52bee23:0xc5163bc7ec8d4437!8m2!3d52.2305286!4d21.0160317"
+                  target="_blank"
+                  >Warszawa, Aleje Jerozolimskie 21</a
+                >
+              </li>
+              <li class="footer-address__item">
+                <a
+                  class="footer-address__link footer-address__link--contact footer-address__link--active"
+                  href="mailto:info@example.com.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer-address__item">
+                <a
+                  class="footer-address__link footer-address__link--contact footer-address__link--active"
+                  href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+          </address>
+          <!-- FOOTER-BAR-ADDRESS'-LIST-END -->
+        </div>
+        <!-- CONTAINER-1200px-END -->
+
+        <!-- SOCIAL-MEDIA-ICONS-WRAPPER-BEGIN -->
+        <div
+          class="social-icons__wrapper social-icons__wrapper--footer-display"
+        >
+          <!-- SOCIAL-MEDIA-ICONS-HEADING-BEGIN -->
+          <p class="social-icons__heading">dołącz do nas</p>
+          <!-- SOCIAL-MEDIA-ICONS-HEADING-BEGIN -->
+
+          <!-- SOCIAL-MEDIA-ICONS-LIST-BEGIN -->
+          <ul class="social-icons__wrapper social-icons__wrapper--footer-style">
+            <li>
+              <a
+                class="social-icon social-icon--active"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <svg
+                  class="social-icon--footer-theme"
+                  width="44px"
+                  height="44px"
+                >
+                  <use
+                    href="./images/SVG/nasz zespół-social icons.svg#icon-instagram-2"
+                    width="20px"
+                    x="12px"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-icon social-icon--footer-theme social-icon--active"
+                href="https://twitter.com/"
+                target="_blank"
+              >
+                <svg width="44px" height="44px">
+                  <use
+                    href="./images/SVG/nasz zespół-social icons.svg#icon-twitter-1"
+                    width="20px"
+                    x="12px"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-icon social-icon--footer-theme social-icon--active"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <svg width="44px" height="44px">
+                  <use
+                    href="./images/SVG/nasz zespół-social icons.svg#icon-facebook-1"
+                    width="20px"
+                    x="12px"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-icon social-icon--footer-theme social-icon--active"
+                href="https://www.linkedin.com/"
+                target="_blank"
+              >
+                <svg width="44px" height="44px">
+                  <use
+                    href="./images/SVG/nasz zespół-social icons.svg#icon-linkedin-1"
+                    width="20px"
+                    x="12px"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <!-- SOCIAL-MEDIA-ICONS-LIST-END -->
+        </div>
+        <!-- SOCIAL-MEDIA-ICONS-WRAPPER-END -->
+
+        <!-- NEWSLETTER' FORM BEGIN -->
+        <div class="newsletter-theme">
+          <label
+            class="newsletter-theme__label newsletter-theme__label--active"
+            for="newsletter-email"
+            >zapisz się do newslettera</label
+          >
+          <form
+            class="newsletter-theme__form"
+            name="newsletter-form"
+            autocomplete="on"
+          >
+            <input
+              class="newsletter-theme__input newsletter-theme__input--acive"
+              id="newsletter-email"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              required
+            />
+            <div class="newsletter-theme__btn">
+              <button
+                class="btn-blue btn-blue--newsletter-submit btn-blue--active"
+                type="submit"
+              >
+                Zapisz się
+              </button>
+              <svg class="newsletter-theme__icon" width="24px" height="24px">
+                <use
+                  href="./images/SVG/newsletter-footer.svg#icon-icon-send"
+                ></use>
+              </svg>
+            </div>
+          </form>
+        </div>
+        <!-- NEWSLETTER' FORM END -->
+      </div>
+      <!-- FOOTER-BAR-WRAPPER-END -->
+    </footer>
+    <!-- FOOTER-BAR-END -->
+
+    <!-- MODAL-SCRIPT-JS-BEGIN -->
+    <script src="./js/modal.js"></script>
+    <!-- MODAL-WINDOW-JS-END -->
+  </body>
+</html>

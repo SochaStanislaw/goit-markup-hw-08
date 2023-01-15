@@ -1,0 +1,5 @@
+@import '../utils/borders-styles';
+
+.header-bar-border {
+    border-bottom: getB('b-header-bar');
+}

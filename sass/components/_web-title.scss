@@ -1,0 +1,23 @@
+@import '../utils/fonts';
+
+.web-title {
+    font-family: $secondFont;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    text-decoration: none;
+
+    &--header-margin {
+        margin-right: 93px;
+    }
+    
+    &--header-color {
+        color: getColor('font-header-black');
+    }
+
+    &--footer-color {
+        color: getColor('font-footer-light');
+    }
+}

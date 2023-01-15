@@ -1,0 +1,35 @@
+@import '../utils/vars';
+@import '../utils/borders-styles';
+@import '../utils/transition-style';
+
+.btn-blue {
+    width: 200px;
+    height: 50px;
+    background: getColor('bg-btn-blue');
+    border: getB('b-btn-blue');
+    border-radius: getBr('br-btn-blue');
+    box-shadow: getBs('bs-btn-blue');
+    color: getColor('font-btn-blue');
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    &--modal-submit {
+        margin: 74px 124px;
+    }
+
+    &--newsletter-submit {
+        padding: 10px 75px 10px 42px;
+    }
+
+    &--active:hover,
+    &--active:focus {
+        background: getColor('bg-btn-blue-active');
+        border: getB('b-btn-blue');
+        border-radius: getBr('br-btn-blue');
+        box-shadow: getBs('bs-btn-blue');
+        transition: getAnimation('global-theme');
+        cursor: pointer;
+    }
+}

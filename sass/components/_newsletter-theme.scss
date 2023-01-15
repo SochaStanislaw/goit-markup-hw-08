@@ -1,0 +1,64 @@
+@import '../utils/vars';
+@import '../utils/borders-styles';
+@import '../utils/transition-style';
+
+.newsletter-theme {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 78px;
+
+    &__label {
+        margin-top: 12px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: getColor('font-footer-light');
+        cursor: pointer;
+    
+        &--active:hover,
+        &--active:hover {
+            border-color: getColor('b-form-active');
+            border-radius: getBr('br-form');
+            transition: getAnimation('global-theme');
+        }
+    }
+    
+    &__form {
+        display: flex;
+        gap: 12px;
+    }
+    
+    &__input {
+        padding: 15px 16px 15px 16px;
+        width: 358px;
+        height: 50px;
+        background: getColor('bg-footer-bar');
+        border: getB('b-newsletter-form');
+        border-radius: getBr('br-form');
+        caret-color: getColor('font-footer-light');
+        color: getColor('font-footer-light');
+    
+        &--acive:hover,
+        &--acive:focus {
+            outline: none;
+            border-color: getColor('bg-active');
+            border-radius: getBr('br-form');
+            box-shadow: getBs('bs-form');
+            transition: getAnimation('global-theme');
+        }
+    }
+
+    &__btn {
+        position: relative;
+    }
+    
+    &__icon {
+        position: absolute;
+        top: 13px;
+        left: 148px;
+        fill: getColor('icon-footer');
+    }
+}

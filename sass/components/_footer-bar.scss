@@ -1,0 +1,15 @@
+@import '../utils/vars';
+
+.footer-bar {
+    background-color: getColor('bg-footer-bar');
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    list-style-type: none;
+
+    &__wrapper {
+        display: flex;
+        padding: 60px 215px 60px 215px;
+    }
+}

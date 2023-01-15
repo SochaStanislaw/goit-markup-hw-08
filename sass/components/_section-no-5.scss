@@ -1,0 +1,38 @@
+@import '../utils/vars';
+@import '../utils/borders-styles';
+@import '../utils/transition-style';
+
+.section-no-5 {
+
+    &__heading {
+        margin-bottom: 50px;
+        padding-top: 94px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        color: getColor('font-global-dark');
+    }
+
+    &__logos-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px 0 15px;
+    }
+
+    &__logo {
+        padding: 16px 32px 16px 32px;
+        border: getB('b-logo');
+        border-radius: getBr('br-logo');
+        fill: getColor('icon-logo');
+
+        &--active:hover,
+        &--active:focus {
+            fill: getColor('bg-active');
+            border: getB('b-form-active');
+            transition: getAnimation('global-theme');
+            cursor: pointer;
+        }
+    }
+}
