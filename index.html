@@ -21,6 +21,112 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <!-- MOBILE-MENU-BEGIN -->
+    <!-- MOBILE-MENU-HAMBURGER-BEGIN -->
+    <button class="hamburger-btn hamburger-btn--active js-open-menu">
+      <svg class="hamburger-btn__icon">
+        <use
+          href="./images/SVG/mobile-menu-icon.svg#icon-menu_40px"
+          width="40px"
+          height="40px"
+        ></use>
+      </svg>
+    </button>
+    <!-- MOBILE-MENU-HAMBURGER-END -->
+
+    <!-- MOBILE-MENU-WRAPPER-BEGIN -->
+    <div class="mobile-menu js-menu-container">
+      <!-- MOBILE-MENU-CLOSE-BTN-ICON-BEGIN -->
+      <button class="modal-close-btn modal-close-btn--active">
+        <svg class="modal-close-btn__icon js-close-menu">
+          <use
+            href="./images/SVG/modal-box-close.svg#icon-close-black-18dp-2-1"
+            width="18px"
+            height="18px"
+            x="4.5px"
+            y="6px"
+          ></use>
+        </svg>
+      </button>
+      <!-- MOBILE-MENU-CLOSE-BTN-ICON-END -->
+
+      <!-- MOBILE-NAVIGATION-BEGIN -->
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__nav-list">
+          <li class="mobile-menu__nav-item">
+            <a class="mobile-menu__nav-link" href="./index.html">Agencja</a>
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a class="mobile-menu__nav-link" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a class="mobile-menu__nav-link" href="./index.html">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- MOBILE-NAVIGATION-END -->
+
+      <!-- MOBILE-CONTACTS-BEGIN -->
+      <ul class="mobile-menu__contact-list">
+        <li>
+          <a
+            class="mobile-menu__contact-link mobile-menu__contact-link--active"
+            href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
+        </li>
+        <li>
+          <a
+            class="mobile-menu__contact-link mobile-menu__contact-link--active"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <!-- MOBILE-CONTACTS-END -->
+
+      <!-- MOBILE-SOCIALS-BEGIN -->
+      <ul class="mobile-menu__social-list">
+        <li class="mobile-menu__social-item">
+          <a
+            class="mobile-menu__social-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li class="mobile-menu__social-item">
+          <a
+            class="mobile-menu__social-link"
+            href="https://twitter.com/"
+            target="_blank"
+            >Twitter</a
+          >
+        </li>
+        <li class="mobile-menu__social-item">
+          <a
+            class="mobile-menu__social-link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            >Facebook</a
+          >
+        </li>
+        <li class="mobile-menu__social-item">
+          <a
+            class="mobile-menu__social-link"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            >Linkedln</a
+          >
+        </li>
+      </ul>
+      <!-- MOBILE-SOCIALS-END -->
+    </div>
+    <!-- MOBILE-MENU-WRAPPER-END -->
+    <!-- MOBILE-MENU-END -->
+
     <!-- MODAL-BOX-BEGIN -->
     <!-- MODAL-BOX-OPEN-EFFECTS-BEGIN -->
     <div class="modal is-hidden backdrop" data-modal>
@@ -1009,6 +1115,10 @@
       <!-- FOOTER-BAR-WRAPPER-END -->
     </footer>
     <!-- FOOTER-BAR-END -->
+
+    <!-- MOBILE-MENU-SCRIPT-JS-BEGIN -->
+    <script defer src="js/mobile-menu.js"></script>
+    <!-- MOBILE-MENU-SCRIPT-JS-END -->
 
     <!-- MODAL-SCRIPT-JS-BEGIN -->
     <script src="./js/modal.js"></script>
