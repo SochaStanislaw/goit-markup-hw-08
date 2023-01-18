@@ -3,22 +3,22 @@
 
 .project-title {
     padding: 24px 20px 20px 20px;
-    border-right: getB('b-project');
-    border-bottom: getB('b-project');
-    border-left: getB('b-project');
+    border-right: getB('b-light-dirty-white');
+    border-bottom: getB('b-light-dirty-white');
+    border-left: getB('b-light-dirty-white');
 
     &__heading {
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
-        color: getColor('font-global-dark');
+        color: getColor('light-black');
         text-decoration: none;
     }
 
     &__type {
         line-height: 1.875;
         letter-spacing: 0.03em;
-        color: getColor('font-global-light');
+        color: getColor('medium-grey');
     }
 }

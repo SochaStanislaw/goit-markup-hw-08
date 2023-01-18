@@ -9,7 +9,7 @@
         font-size: 36px;
         line-height: 1.16;
         letter-spacing: 0.03em;
-        color: getColor('font-global-dark');
+        color: getColor('light-black');
     }
 
     &__list {
@@ -32,11 +32,11 @@
         bottom: 0%;
         width: 370px;
         height: 70px;
-        background: getColor('bg-section-no-3');
+        background: getColor('dark-grey-transparent');
         text-transform: uppercase;
         font-weight: 700;
         font-size: 14px;
         letter-spacing: 0.03em;
-        color: getColor('font-section-no-2');
+        color: getColor('pure-white');
     }
 }

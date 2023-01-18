@@ -13,12 +13,12 @@
     padding: 49px 45px 49px 24px;
     width: 100%;
     height: 100%;
-    background-color: getColor('bg-active');
+    background-color: getColor('global-blue');
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
-    color: getColor('font-project');
+    color: getColor('pure-white');
     text-decoration: none;
     transform: translateY(1);
     transition: transform getAnimation('global-theme');

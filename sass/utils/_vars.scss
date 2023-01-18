@@ -1,57 +1,16 @@
+// SIMPLIFIED VARS
 $colors: (
-    // BG
-    // modal-backdrop
-    'bg-backdrop': #00000033,
-    // buttons
-    'bg-btn-blue': #2196F3,
-    'bg-btn-modal-close': #FFFFFF,
-    'bg-btn-filter': #F5F4FA,
-    'bg-btn-hamburger': none,
-    // bloks, elements bg
-    'bg-full-page': #FFFFFF,
-    'bg-modal': #FFFFFF,
-    'bg-section-no-1': #2F303A,
-    'bg-section-no-2': #F5F4FA,
-    'bg-section-no-3': #2f303acc,
-    'bg-section-no-4': #F5F4FA,
-    'bg-section-no-4-item': #FFFFFF,
-    'bg-footer-bar': #2F303A,
-    'bg-social': #ffffff1a,
-    // active' bg
-    'bg-btn-blue-active': #1d85dae8,
-    'bg-active': #2196F3,
-
-    // FONTS
-    // global
-    'font-global-light': #757575,
-    'font-global-dark': #212121,
-    // btn
-    'font-btn-blue': #FFFFFF,
-    // sections
-    'font-section-no-1': #FFFFFF,
-    'font-section-no-2': #FFFFFF,
-    // project
-    'font-project': #FFFFFF,
-    // header
-    'font-header-light': #757575,
-    'font-header-dark': #212121,
-    'font-header-black': #000000,
-    // footer
-    'font-footer-light': #ffffff,
-    'font-footer-dark': #ffffff99,
-    // active' fonts 
-    'font-active': #2196F3,
-    'font-btn-filter-active': #ffffff,
-    // link' font styles
-    'font-link': inherit,
-
-    // ICONS:
-    'icon-header': #757575,
-    'icon-btn-modal-close-active': #ffffff,
-    'icon-footer': #ffffff,
-    'icon-logo': #AFB1B8,
-    'icon-social': #AFB1B8,
-    'icon-social-active': #ffffff,
+'font-link': inherit,
+'pure-white': #FFFFFF,
+'dirty-white': rgba(245, 244, 250, 1),
+'chill-grey': rgba(175, 177, 184, 1),
+'medium-grey': rgba(117, 117, 117, 1),
+'dark-grey': rgba(47, 48, 58, 1),
+'dark-grey-transparent': rgba(47, 48, 58, 0.8),
+'light-black': rgba(33, 33, 33, 1),
+'dark-black': #000000,
+'global-blue': rgba(33, 150, 243, 1),
+'global-blue-transparent': rgba(29, 133, 218, 0.91),
 );
 
 @function getColor($key) {

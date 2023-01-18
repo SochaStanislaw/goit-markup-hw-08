@@ -1,7 +1,8 @@
 @import '../utils/vars';
 @import '../utils/transition-style';
+@import '../utils/mixins';
 
-.footer-address {
+.footer-contact {
 
     &__wrapper {
         margin-top: 20px;
@@ -24,17 +25,16 @@
         text-decoration: none;
 
         &--city {
-            color: getColor('font-footer-light');
+            color: getColor('pure-white');
         }
 
         &--contact {
-            color: getColor('font-footer-dark');
+            color: getColor('chill-grey');
         }
 
         &--active:hover,
         &--active:focus {
-            color: getColor('font-active');
-            transition: getAnimation('global-theme');
+            @include link-active;
         }
     }
 }

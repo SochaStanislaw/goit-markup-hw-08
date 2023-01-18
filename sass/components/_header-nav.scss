@@ -1,6 +1,7 @@
 @import '../utils/vars';
 @import '../utils/borders-styles';
 @import '../utils/transition-style';
+@import '../utils/mixins';
 
 .header-nav {
     width: 254px;
@@ -9,7 +10,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: getColor('font-header-dark');
+    color: getColor('light-black');
 
     &__list {
         display: flex;
@@ -22,11 +23,11 @@
         top: 45.5px;
         left: 0;
         content: '';
-        border-bottom: getB('b-nav');
-        border-radius: getBr('br-nav');
+        border-bottom: getB('b-bold-blue');
+        border-radius: getBr('br-thick');
     }
     
-    &__underline-agnecja-style::after {
+    &__underline-main-style::after {
         width: 53px;
     }
     
@@ -36,17 +37,16 @@
     
     &__item--active-color {
         position: relative;
-        color: getColor('font-active');
+        color: getColor('global-blue');
     }
 
     &__link {
         color: getColor('font-link');
-        text-decoration: none;  
+        text-decoration: none;
 
         &--active:hover,
         &--active:focus {
-            color: getColor('font-active');
-            transition: getAnimation('global-theme');
+            @include link-active;
         }
     }
 }

@@ -5,11 +5,11 @@
 .btn-blue {
     width: 200px;
     height: 50px;
-    background: getColor('bg-btn-blue');
-    border: getB('b-btn-blue');
-    border-radius: getBr('br-btn-blue');
-    box-shadow: getBs('bs-btn-blue');
-    color: getColor('font-btn-blue');
+    background: getColor('global-blue');
+    border: none;
+    border-radius: getBr('br-thick');
+    box-shadow: getBs('bs-thick-black');
+    color: getColor('pure-white');
     font-size: 16px;
     font-weight: 700;
     line-height: 1.88;
@@ -25,10 +25,7 @@
 
     &--active:hover,
     &--active:focus {
-        background: getColor('bg-btn-blue-active');
-        border: getB('b-btn-blue');
-        border-radius: getBr('br-btn-blue');
-        box-shadow: getBs('bs-btn-blue');
+        background: getColor('global-blue-transparent');
         transition: getAnimation('global-theme');
         cursor: pointer;
     }

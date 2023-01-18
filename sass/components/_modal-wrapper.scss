@@ -7,9 +7,9 @@
     left: 50%;
     width: 528px;
     height: 581px;
-    background-color: getColor('bg-modal');
-    border-radius: getBr('br-form');
-    box-shadow: getBs('bs-modal');
+    background-color: getColor('pure-white');
+    border-radius: getBr('br-thick');
+    box-shadow: getBs('bs-global');
     z-index: 2;
     transform: translate(-50%, -50%);
 }

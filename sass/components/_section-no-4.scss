@@ -2,7 +2,7 @@
 @import '../utils/borders-styles';
 
 .section-no-4 {
-    background-color: getColor('bg-section-no-4');
+    background-color: getColor('dirty-white');
 
     &__heading {
         text-align: center;
@@ -11,7 +11,7 @@
         font-size: 36px;
         line-height: 1.16;
         letter-spacing: 0.03em;
-        color: getColor('font-global-dark');
+        color: getColor('light-black');
     }
 
     &__list {
@@ -24,9 +24,9 @@
     }
     
     &__item {
-        background: getColor('bg-section-no-4-item');
-        border-radius: getBs('br-section-no-4-item');
-        box-shadow: getBs('bs-section-no-4-item');   
+        background: getColor('pure-white');
+        border-radius: getBs('br-thick');
+        box-shadow: getBs('bs-global');   
     }
 
     &__text-wrapper {
@@ -40,11 +40,11 @@
     &__team-member-name {
         margin-bottom: 10px;
         font-weight: 500;
-        color: getColor('font-global-dark');
+        color: getColor('light-black');
     }
     
     &__team-member-profession {
         font-weight: 400;
-        color: getColor('font-global-light');
+        color: getColor('medium-grey');
     }
 }

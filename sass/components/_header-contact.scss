@@ -1,12 +1,13 @@
 @import '../utils/vars';
 @import '../utils/transition-style';
+@import '../utils/mixins';
 
 .header-contact {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    color: getColor('font-header-light');
-    fill: getColor('icon-header');
+    color: getColor('medium-grey');
+    fill: getColor('medium-grey');
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -22,9 +23,7 @@
     
         &--active:hover,
         &--active:focus {
-            fill: getColor('bg-active');
-            color: getColor('font-active');
-            transition: getAnimation('global-theme');
+            @include link-active;
         }
     }
 }

@@ -1,28 +1,28 @@
 @import '../utils/vars';
 @import '../utils/borders-styles';
 @import '../utils/transition-style';
+@import '../utils/mixins';
 
 .social-icon {
     display: block;
     width: 44px;
     height: 44px;
-    border-radius: getBr('br-social');
+    border-radius: getBr('br-round');
 
     &--section-no-4-color {
-        fill: getColor('icon-social');
+        fill: getColor('chill-grey');
     }
 
     &--footer-theme {
-        fill: getColor('icon-footer');
-        background-color: getColor('bg-social');
-        border-radius: getBr('br-social');
+        fill: getColor('pure-white');
+        background-color: #ffffff1a;
     }
 
     &--active:hover,
     &--active:focus {
-        fill: getColor('icon-social-active');
-        background-color: getColor('bg-active');
-        border-radius: getBr('br-social');
+        fill: getColor('pure-white');
+        background-color: getColor('global-blue');
+        border-radius: getBr('br-round');
         transition: getAnimation('global-theme');
     }
 }

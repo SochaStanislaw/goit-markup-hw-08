@@ -15,20 +15,20 @@
     &__btn {
         padding: 6px 22px;
         text-align: center;
-        background-color: getColor('bg-btn-filter');
-        border: getB('b-btn-filter');
-        border-radius: getBr('br-btn-filter');
+        background-color: getColor('dirty-white');
+        border: none;
+        border-radius: getBr('br-thick');
         font-weight: 500;
         line-height: 1.625;        
         letter-spacing: 0.03em;
-        color: getColor('font-global-dark');
+        color: getColor('light-black');
         cursor: pointer;
 
         &--active:hover,
         &--active:focus {
-            background-color: getColor('bg-active');
-            color: getColor('font-btn-filter-active');
-            box-shadow: getBs('bs-btn-filter');
+            background-color: getColor('global-blue');
+            color: getColor('pure-white');
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
             transition: getAnimation('global-theme');
         }
     }

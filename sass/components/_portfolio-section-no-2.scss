@@ -1,22 +1,25 @@
 @import '../utils/borders-styles';
 @import '../utils/transition-style';
 
-.portfolio-section-no-2__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 50px 15px 0 15px;
-    list-style-type: none;
-}
+.portfolio-section-no-2 {
 
-.portfolio-section-no-2__item--active:hover,
-.portfolio-section-no-2__item--active:focus {
-    box-shadow: getBs('bs-project');
-    transition: getAnimation('global-theme');
-    cursor: pointer;
-}
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 50px 15px 0 15px;
+        list-style-type: none;
+    }
 
-.portfolio-section-no-2__item--active:hover .project__link--active,
-.portfolio-section-no-2__item--active:focus .project__link--active {
-    transform: translateY(-100%);
+    &__item--active:hover,
+    &__item--active:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        transition: getAnimation('global-theme');
+        cursor: pointer;
+
+        & .project__link--active,
+        & .project__link--active {
+            transform: translateY(-100%);
+        }
+    }
 }

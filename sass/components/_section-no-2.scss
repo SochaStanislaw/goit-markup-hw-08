@@ -15,8 +15,8 @@
         margin-bottom: 30px;
         width: 270px;
         height: 120px;
-        background-color: getColor('bg-section-no-2');
-        border-radius: getBr('br-section-no-2');
+        background-color: getColor('dirty-white');
+        border-radius: getBr('br-thick');
 
     }
 
@@ -31,12 +31,12 @@
         text-transform: uppercase;
         font-weight: 700;
         line-height: 1.1;
-        color: getColor('font-global-dark');
+        color: getColor('light-black');
     }
 
     &__paragraph {
         font-weight: 400;
         line-height: 1.71;
-        color: getColor('font-global-light');
+        color: getColor('medium-grey');
     }
 }

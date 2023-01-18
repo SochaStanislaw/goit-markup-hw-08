@@ -2,27 +2,27 @@
 @import '../utils/borders-styles';
 @import '../utils/transition-style';
 
-.modal-close-btn {
+.btn-close {
     position: absolute;
     top: 8px;
     right: 10px;
     width: 30px;
     height: 30px;
-    background: getColor('bg-btn-modal-close');
-    border: getB('b-btn-modal-close');
-    border-radius: getBr('br-btn-modal-close');
+    background: getColor('pure-white');
+    border: getB('b-light-black');
+    border-radius: getBr('br-round');
 
     &__icon {
         width: 100%;
         height: 100%;
-        border-radius: getBr('br-btn-modal-close');
+        border-radius: getBr('br-round');
     }
 
     &--active:hover,
     &--active:focus {
         outline: none;
-        background-color: getColor('bg-active');
-        fill: getColor('icon-btn-modal-close-active');
+        background-color: getColor('global-blue');
+        fill: getColor('pure-white');
         transition: getAnimation('global-theme');
         cursor: pointer;
     }

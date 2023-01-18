@@ -1,53 +1,24 @@
+// SIMPLIFIED VARS
+// BORDER STYLES
 $border-style: (
-    // btn
-    'b-btn-blue': none,
-    'b-btn-modal-close': 1px solid #0000001a,
-    'b-btn-filter': none,
-    'b-btn-hamburger': none,
-    // header bar
-    'b-header-bar': 1px solid #ECECEC,
-    // navigation underline
-    'b-nav': 4px solid #2196f3,
-    // forms
-    'b-modal-form': 1px solid #21212133,
-    'b-newsletter-form': 1px solid #ffffff4d,
-    // logos
-    'b-logo': 1px solid #AFB1B8,
-    // projects
-    'b-project': 1px solid #EEEEEE,
-    // active
-    'b-form-active': 1px solid #2196F3,
+    'b-light-dirty-white': 1px solid #ECECEC,
+    'b-light-grey': 1px solid #AFB1B8,
+    'b-light-black': 1px solid #21212133,
+    'b-light-blue': 1px solid #2196F3,
+    'b-bold-blue': 4px solid #2196f3,
 );
 
+// BORDER RADIUS TYPES
 $border-radius: (
-    'br-section-no-2': 4px,
-    'br-section-no-4-item': 0px 0px 4px 4px,
-    'br-logo': 4px,
-    // btn
-    'br-btn-blue': 4px,
-    'br-btn-modal-close': 50%,
-    'br-btn-filter': 4px,
-    // navigation underline
-    'br-nav': 2px,
-    // forms
-    'br-form': 4px,
-    // social icon
-    'br-social': 50%,
-    
-    
+    'br-lite': 2px,
+    'br-thick': 4px,
+    'br-round': 50%,
 );
 
+// SHADOWS STYLES
 $box-shadows: (
-    'bs-section-no-4-item': (0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2)),
-    // btn
-    'bs-btn-blue': 0px 4px 4px #00000026,
-    'bs-btn-filter': (0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12)),
-    // modal
-    'bs-modal': (0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2)),
-    // form
-    'bs-form': 0px 4px 4px #00000026,
-    // project
-    'bs-project': (0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16)),
+    'bs-global': (0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2)),
+    'bs-thick-black': 0px 4px 4px #00000026,
 );
 
 @function getB($key) {

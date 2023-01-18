@@ -1,0 +1,22 @@
+@mixin form-active {
+    outline: none;
+    border: getB('b-light-blue');
+    border-radius: getBr('br-thick');
+    transition: getAnimation('global-theme');
+}
+
+@mixin link-active {
+    fill: getColor('global-blue');
+    color: getColor('global-blue');
+    transition: getAnimation('global-theme');
+}
+
+@mixin footer-headings {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: getColor('pure-white');
+}

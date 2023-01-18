@@ -11,10 +11,17 @@
 // BTN-BLUE
 @import 'components/btn-blue';
 
-// SOCIAL-ICONS-WRAPPER
-@import 'components/social-icons';
+// BTN-CLOSE
+@import 'components/btn-close';
+
+// SOCIAL-ICONS-CONTAINER
+@import 'components/social-container';
 // SOCIAL-MEDIA-ICON-THEME
 @import 'components/social-icon';
+
+// MOBILE-MENU
+@import 'components/hamburger-btn';
+@import 'components/mobile-menu';
 
 // MODAL-BOX
 // MODAL-BOX-OPEN-EFFECTS
@@ -22,19 +29,10 @@
 @import 'components/backdrop';
 // MODAL-WRAPPER
 @import 'components/modal-wrapper';
-// MODAL-BOX-CLOSE-BTN-ICON
-@import 'components/modal-close-btn';
 // MODAL-BOX-HEADING
 @import 'components/modal-box';
 // MODAL-FORM-WRAPPER
 @import 'components/modal-form';
-
-// MOBILE-MENU
-// MOBILE-MENU-BTN
-@import './components/hamburger-btn';
-// MOBILE-MENU-WRAPPER
-@import './components/mobile-menu';
-// MOBILE-MENU-CLOSE-BTN==MODAL-CLOSE-BTN
 
 // HEADER-BAR
 @import 'components/header-bar-wrapper';
@@ -60,7 +58,6 @@
 // SECTION-NO-5
 @import 'components/section-no-5';
 
-
 // PORTFOLIO-SECTION-NO-1
 @import 'components/portfolio-section-no-1';
 
@@ -71,7 +68,7 @@
 
 // FOOTER-BAR
 @import 'components/footer-bar';
-@import 'components/footer-address';
+@import 'components/footer-contact';
 
 // NEWSLETTER' FORM
 @import 'components/newsletter-theme';

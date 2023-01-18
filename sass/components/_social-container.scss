@@ -1,15 +1,11 @@
 @import '../utils/vars';
+@import '../utils/mixins';
 
-.social-icons {
+.social-container {
 
     &__heading {
-        margin: 12px 0 20px 0;
-        text-transform: uppercase;
-        font-weight: 700;
-        line-height: 1.43;
-        font-size: 14px;
-        letter-spacing: 0.03em;
-        color: getColor('font-footer-light');
+        @include footer-headings;
+        margin-bottom: 20px;
     }
 
     &__wrapper {
