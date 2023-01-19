@@ -1,5 +1,6 @@
 @import '../utils/vars';
 
+// MOBILE-VIEW
 .footer-bar {
     background-color: getColor('dark-grey');
     font-size: 14px;
@@ -10,6 +11,53 @@
 
     &__wrapper {
         display: flex;
-        padding: 60px 215px 60px 215px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 60px 15px 60px 15px;
+    }
+}
+
+// TABLET-VIEW
+@media (min-width: 768px) {
+    .footer-bar {
+        background-color: getColor('dark-grey');
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        list-style-type: none;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 60px 89px 60px 76px;
+        
+            &--tablet-display {
+                display: flex;
+            }
+        }
+    }
+}
+
+// DESKOP-VIEW
+@media (min-width: 1200px) {
+    .footer-bar {
+        background-color: getColor('dark-grey');
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        list-style-type: none;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: row;
+            padding: 60px 215px 60px 215px;
+        
+            &--tablet-display {
+                gap: 70px;
+            }
+        }
     }
 }

@@ -1,6 +1,7 @@
 @import '../utils/vars';
 @import '../utils/mixins';
 
+// MOBILE-VIEW
 .social-container {
 
     &__heading {
@@ -19,11 +20,74 @@
         &--footer-display {
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
         
         &--footer-style {
             gap: 10px;
             list-style-type: none;
+        }
+    }
+}
+
+// TABLET-VIEW
+@media (min-width: 768px) {
+    .social-container {
+
+        &__heading {
+            @include footer-headings;
+            margin-bottom: 20px;
+        }
+
+        &__wrapper {
+            display: flex;
+
+            &--section-no-4-style {
+                justify-content: space-between;
+                padding: 16px 32px 18px 32px;
+            }
+            
+            &--footer-display {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            &--footer-style {
+                gap: 10px;
+                list-style-type: none;
+            }
+        }
+    }
+}
+
+// DESKOP-VIEW
+@media (min-width: 1200px) {
+    .social-container {
+
+        &__heading {
+            @include footer-headings;
+            margin-bottom: 20px;
+        }
+
+        &__wrapper {
+            display: flex;
+
+            &--section-no-4-style {
+                justify-content: space-between;
+                padding: 16px 32px 18px 32px;
+            }
+            
+            &--footer-display {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            &--footer-style {
+                gap: 10px;
+                list-style-type: none;
+            }
         }
     }
 }

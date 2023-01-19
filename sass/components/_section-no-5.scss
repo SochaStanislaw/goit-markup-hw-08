@@ -3,27 +3,32 @@
 @import '../utils/transition-style';
 @import '../utils/mixins';
 
+// MOBILE-VIEW
 .section-no-5 {
 
     &__heading {
-        margin-bottom: 50px;
-        padding-top: 94px;
+        margin-bottom: 30px;
+        padding-top: 60px;
         text-align: center;
         font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
+        font-size: 28px;
+        line-height: 1.179;
         letter-spacing: 0.03em;
         color: getColor('light-black');
     }
 
     &__logos-wrapper {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
+        gap: 30px;
         padding: 0 15px 0 15px;
     }
 
     &__logo {
-        padding: 16px 32px 16px 32px;
+        width: 210px;
+        height: 92px;
+        padding: 16px 52px 16px 52px;
         border: getB('b-light-grey');
         border-radius: getBr('br-thick');
         fill: getColor('chill-grey');
@@ -32,6 +37,86 @@
         &--active:focus {
             @include link-active;
             border: getB('b-light-blue');
+        }
+    }
+}
+
+// TABLET-VIEW
+@media (min-width: 768px) {
+    .section-no-5 {
+
+        &__heading {
+            margin-bottom: 50px;
+            padding-top: 94px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 1.179;
+            letter-spacing: 0.03em;
+            color: getColor('light-black');
+        }
+
+        &__logos-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 0 15px 0 15px;
+        }
+
+        &__logo {
+            width: 226px;
+            height: 92px;
+            padding: 16px 60px 16px 60px;
+            border: getB('b-light-grey');
+            border-radius: getBr('br-thick');
+            fill: getColor('chill-grey');
+
+            &--active:hover,
+            &--active:focus {
+                @include link-active;
+                border: getB('b-light-blue');
+            }
+        }
+    }
+}
+
+// DESKOP-VIEW
+@media (min-width: 1200px) {
+    .section-no-5 {
+
+        &__heading {
+            margin-bottom: 50px;
+            padding-top: 94px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.16;
+            letter-spacing: 0.03em;
+            color: getColor('light-black');
+        }
+
+        &__logos-wrapper {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 0 15px 0 15px;
+        }
+
+        &__logo {
+            width: 170px;
+            height: 92px;
+            padding: 16px 32px 16px 32px;
+            border: getB('b-light-grey');
+            border-radius: getBr('br-thick');
+            fill: getColor('chill-grey');
+
+            &--active:hover,
+            &--active:focus {
+                @include link-active;
+                border: getB('b-light-blue');
+            }
         }
     }
 }

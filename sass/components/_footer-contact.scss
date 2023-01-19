@@ -2,11 +2,14 @@
 @import '../utils/transition-style';
 @import '../utils/mixins';
 
+// MOBILE-VIEW
 .footer-contact {
 
     &__wrapper {
         margin-top: 20px;
-        font-style: normal;    
+        margin-bottom: 60px;
+        font-style: normal;
+        text-align: center;  
     }
 
     &__list {
@@ -14,11 +17,7 @@
     }
 
     &__item {
-        margin-top: 9px;
-
-        &--city {
-            margin-top: 20px;
-        }
+        margin-top: 8px;
     }
 
     &__link {
@@ -35,6 +34,86 @@
         &--active:hover,
         &--active:focus {
             @include link-active;
+        }
+    }
+}
+
+// TABLET-VIEW
+@media (min-width: 768px) {
+    .footer-contact {
+
+        &__wrapper {
+            margin-top: 20px;
+            margin-bottom: 60px;
+            font-style: normal;    
+            text-align: center;  
+        }
+
+        &__list {
+            list-style-type: none;
+        }
+
+        &__item {
+            margin-top: 8px;
+        }
+
+        &__link {
+            text-decoration: none;
+
+            &--city {
+                color: getColor('pure-white');
+            }
+
+            &--contact {
+                color: getColor('chill-grey');
+            }
+
+            &--active:hover,
+            &--active:focus {
+                @include link-active;
+            }
+        }
+    }
+}
+
+// DESKOP-VIEW
+@media (min-width: 1200px) {
+    .footer-contact {
+
+        &__wrapper {
+            margin-top: 20px;
+            margin-bottom: 0;
+            font-style: normal;    
+            text-align: left;  
+        }
+
+        &__list {
+            list-style-type: none;
+        }
+
+        &__item {
+            margin-top: 9px;
+
+            &--city {
+                margin-top: 20px;
+            }
+        }
+
+        &__link {
+            text-decoration: none;
+
+            &--city {
+                color: getColor('pure-white');
+            }
+
+            &--contact {
+                color: getColor('chill-grey');
+            }
+
+            &--active:hover,
+            &--active:focus {
+                @include link-active;
+            }
         }
     }
 }
