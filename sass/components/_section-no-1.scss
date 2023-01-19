@@ -1,14 +1,25 @@
 @import '../utils/vars';
 
+// RATIO DLA BGI!!!
+
+// MOBILE-VIEW
+// @media (min-device-pixel-ratio: 2;) {
+//     .section-no-1 {
+//     background-image: url(../../images/background-section-no-1/mobile/bg-image-mobile@1x.jpg);    
+//     }    
+// }
+
 .section-no-1 {
+    width: 480px;
+    height: 400px;
     text-align: center;
-    background-color: getColor('bg-section-no-1');
+    background-color: getColor('light-black');
     background-image: 
     linear-gradient(rgba(47, 48, 58, 0.4)50%, rgba(47, 48, 58, 0.4)50%), 
-    url(../images/background-section-no-1/bg-image.jpg);
+    url(../../images/background-section-no-1/mobile/bg-image-mobile@1x.jpg);
 
     &__heading-padding {
-        padding: 200px 252px 200px 252px;
+        padding: 118px 58px 118px 57px;
     }
         
     &__heading-style {
@@ -16,9 +27,65 @@
         text-align: center;
         text-transform: uppercase;
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+        font-size: 26px;
+        line-height: 1.62;
         letter-spacing: 0.06em;
         color: getColor('pure-white')
+    }
+}
+
+// TABLET-VIEW
+@media (min-width: 768px) {
+    .section-no-1 {
+        width: 768px;
+        height: 400px;
+        text-align: center;
+        background-color: getColor('bg-section-no-1');
+        background-image: 
+        linear-gradient(rgba(47, 48, 58, 0.4)50%, rgba(47, 48, 58, 0.4)50%), 
+        url(../../images/background-section-no-1/tablet/bg-image-tablet@1x.jpg);
+
+        &__heading-padding {
+            padding: 118px 201px 118px 202px;
+        }
+            
+        &__heading-style {
+            margin-bottom: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 1.62;
+            letter-spacing: 0.06em;
+            color: getColor('pure-white')
+        }
+    }
+}
+
+// DESKOP-VIEW
+@media (min-width: 1200px) {
+    .section-no-1 {
+        width: 1600px;
+        height: 600px;
+        text-align: center;
+        background-color: getColor('bg-section-no-1');
+        background-image: 
+        linear-gradient(rgba(47, 48, 58, 0.4)50%, rgba(47, 48, 58, 0.4)50%), 
+        url(../../images/background-section-no-1/deskop/bg-image-deskop@1x.jpg);
+
+        &__heading-padding {
+            padding: 200px 252px 200px 252px;
+        }
+            
+        &__heading-style {
+            margin-bottom: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;
+            letter-spacing: 0.06em;
+            color: getColor('pure-white')
+        }
     }
 }

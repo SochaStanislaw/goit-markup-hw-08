@@ -1,6 +1,7 @@
 @import '../utils/vars';
 @import '../utils/borders-styles';
 
+// MOBILE-VIEW
 .section-no-4 {
     background-color: getColor('dirty-white');
 
@@ -8,8 +9,8 @@
         text-align: center;
         padding: 94px 15px 50px 15px;
         font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
+        font-size: 28px;
+        line-height: 1.179;
         letter-spacing: 0.03em;
         color: getColor('light-black');
     }
@@ -26,7 +27,7 @@
     &__item {
         background: getColor('pure-white');
         border-radius: getBs('br-thick');
-        box-shadow: getBs('bs-global');   
+        box-shadow: getBs('bs-global');     
     }
 
     &__text-wrapper {
@@ -46,5 +47,107 @@
     &__team-member-profession {
         font-weight: 400;
         color: getColor('medium-grey');
+    }
+}
+
+// TABLET-VIEW
+@media (min-width: 768px) {
+    .section-no-4 {
+        background-color: getColor('dirty-white');
+
+        &__heading {
+            text-align: center;
+            padding: 94px 15px 50px 15px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.16;
+            letter-spacing: 0.03em;
+            color: getColor('light-black');
+        }
+
+        &__list {
+            display: flex;
+            align-content: center;
+            justify-content: space-between;
+            align-content: center;
+            padding: 0px 15px 0 15px;
+            list-style-type: none;
+        }
+        
+        &__item {
+            background: getColor('pure-white');
+            border-radius: getBs('br-thick');
+            box-shadow: getBs('bs-global');   
+        }
+
+        &__text-wrapper {
+            padding-top: 30px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.188;
+            letter-spacing: 0.03em;
+        }
+        
+        &__team-member-name {
+            margin-bottom: 10px;
+            font-weight: 500;
+            color: getColor('light-black');
+        }
+        
+        &__team-member-profession {
+            font-weight: 400;
+            color: getColor('medium-grey');
+        }
+    }
+}
+
+// DESKOP-VIEW
+@media (min-width: 1200px) {
+    .section-no-4 {
+        background-color: getColor('dirty-white');
+
+        &__heading {
+            text-align: center;
+            padding: 94px 15px 50px 15px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.16;
+            letter-spacing: 0.03em;
+            color: getColor('light-black');
+        }
+
+        &__list {
+            display: flex;
+            align-content: center;
+            justify-content: space-between;
+            align-content: center;
+            padding: 0px 15px 0 15px;
+            list-style-type: none;
+        }
+        
+        &__item {
+            background: getColor('pure-white');
+            border-radius: getBs('br-thick');
+            box-shadow: getBs('bs-global');   
+        }
+
+        &__text-wrapper {
+            padding-top: 30px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.188;
+            letter-spacing: 0.03em;
+        }
+        
+        &__team-member-name {
+            margin-bottom: 10px;
+            font-weight: 500;
+            color: getColor('light-black');
+        }
+        
+        &__team-member-profession {
+            font-weight: 400;
+            color: getColor('medium-grey');
+        }
     }
 }

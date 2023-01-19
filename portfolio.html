@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio - Portfolio</title>
+    <link rel="shotrcut icon" href="./images/page-logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,7 +37,7 @@
           <!-- HEADER-NAVIGATION-BEGIN -->
           <nav class="header-nav">
             <ul class="header-nav__list">
-              <li class="header-nav__underline-global-style">
+              <li>
                 <a
                   class="header-nav__link header-nav__link--active"
                   href="./index.html"
@@ -44,7 +45,7 @@
                 >
               </li>
               <li
-                class="header-nav__underline-global-style header-nav__underline-portfolio-style header-nav__item--active-color"
+                class="header-nav__underline-global-style header-nav__underline-main-style header-nav__item--active-color"
               >
                 <a
                   class="header-nav__link header-nav__link--active"
@@ -89,6 +90,18 @@
             </li>
           </ul>
           <!-- HEADER-CONTACTS-END -->
+
+          <!-- MOBILE-MENU-HAMBURGER-BEGIN -->
+          <button class="hamburger-btn hamburger-btn--active js-open-menu">
+            <svg class="hamburger-btn__icon">
+              <use
+                href="./images/SVG/mobile-menu-icon.svg#icon-menu_40px"
+                width="40px"
+                height="40px"
+              ></use>
+            </svg>
+          </button>
+          <!-- MOBILE-MENU-HAMBURGER-END -->
         </div>
         <!-- HEADER-BAR-WRAPPER-END -->
       </div>

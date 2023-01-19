@@ -1,42 +1,90 @@
 @import '../utils/vars';
 
+// MOBILE-VIEW
 .section-no-3 {
 
     &__heading {
-        margin-bottom: 50px;
-        text-align: center;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
-        letter-spacing: 0.03em;
-        color: getColor('light-black');
+        display: none;
     }
 
     &__list {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 15px 0 15px;
-        height: 294px;
-        list-style-type: none;
+        display: none;
     }
 
     &__item {
-        position: relative;
+        display: none;
     }
 
     &__description-bg {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        bottom: 0%;
-        width: 370px;
-        height: 70px;
-        background: getColor('dark-grey-transparent');
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 14px;
-        letter-spacing: 0.03em;
-        color: getColor('pure-white');
+        display: none;
+    }
+}
+
+// TABLET-VIEW
+@media (min-width: 768px) {
+    .section-no-3 {
+
+            &__heading {
+                display: none;
+            }
+
+            &__list {
+                display: none;
+            }
+
+            &__item {
+                display: none;
+            }
+
+            &__description-bg {
+                display: none;
+        }
+    }
+}
+
+// DESKOP-VIEW
+@media (min-width: 1200px) {
+    .section-no-3 {
+
+        &__heading {
+            display: flex;
+            margin-bottom: 50px;
+            justify-content: center;
+            text-align: center;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.16;
+            letter-spacing: 0.03em;
+            color: getColor('light-black');
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 15px 0 15px;
+            height: 294px;
+            list-style-type: none;
+        }
+
+        &__item {
+            display: flex;
+            position: relative;
+        }
+
+        &__description-bg {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom: 0%;
+            width: 370px;
+            height: 70px;
+            background: getColor('dark-grey-transparent');
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            color: getColor('pure-white');
+        }
     }
 }

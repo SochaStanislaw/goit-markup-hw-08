@@ -1,15 +1,35 @@
 @import '../utils/vars';
 @import '../utils/borders-styles';
 
-.modal-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 528px;
-    height: 581px;
-    background-color: getColor('pure-white');
-    border-radius: getBr('br-thick');
-    box-shadow: getBs('bs-global');
-    z-index: 2;
-    transform: translate(-50%, -50%);
+// SMARTPHONE-VIEW
+// TABLET-VIEW
+@media (max-width: 1200px) {
+    .modal-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 528px;
+        height: 581px;
+        background-color: getColor('pure-white');
+        border-radius: getBr('br-thick');
+        box-shadow: getBs('bs-global');
+        z-index: 2;
+        transform: translate(-50%, -50%);
+    }
+}
+
+// DESKOP-VIEW
+@media (min-width: 1200px) {
+    .modal-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 528px;
+        height: 581px;
+        background-color: getColor('pure-white');
+        border-radius: getBr('br-thick');
+        box-shadow: getBs('bs-global');
+        z-index: 2;
+        transform: translate(-50%, -50%);
+    }
 }

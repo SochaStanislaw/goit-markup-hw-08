@@ -3,6 +3,8 @@
 
 * img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 * {
@@ -10,9 +12,32 @@
     padding: 0;
 }
 
+// MOBILE-VIEW
 body {
     font-family: $primaryFont;
     background-color: getColor('pure-white');
     margin: 0 auto;
-    width: 1600px;
+    max-width: 480px;
 }
+
+// TABLET-VIEW
+@media (min-width: 768px) {
+    body {
+        font-family: $primaryFont;
+        background-color: getColor('pure-white');
+        margin: 0 auto;
+        max-width: 768px;
+    }
+}
+
+// DESKOP-VIEW
+@media (min-width: 1200px) {
+    body {
+        font-family: $primaryFont;
+        background-color: getColor('pure-white');
+        margin: 0 auto;
+        max-width: 1600px;
+    }
+}
+
+

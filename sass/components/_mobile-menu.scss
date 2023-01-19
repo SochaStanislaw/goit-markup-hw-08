@@ -2,11 +2,11 @@
 @import '../utils/borders-styles';
 @import '../utils/transition-style';
 
+// MOBILE-VIEW
 .mobile-menu {
     position: fixed;
     top: 0;
     right: 0;
-    display: none;
     opacity: 0;
     width: 480px;
     height: 796px;
@@ -106,5 +106,19 @@
             color: #2196F3;
             transition: getAnimation('global-theme');
         }
+    }
+}
+
+// TABLET-VIEW
+@media (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+// DESKOP-VIEW
+@media (min-width: 1200px) {
+    .mobile-menu {
+        display: none;
     }
 }

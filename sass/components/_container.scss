@@ -1,4 +1,35 @@
+// MOBILE-VIEW
 .container {
+    position: relative;
     margin: 0 auto;
-    width: 1200px;
+    max-width: 480px;
 }
+
+// TABLET-VIEW
+@media (min-width: 768px) {
+    .container {
+        margin: 0 auto;
+        max-width: 768px;
+    }
+}
+
+// DESKOP-VIEW
+@media (min-width: 1200px) {
+    .container {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+  }
+
+// MOBILE-VIEW
+
+
+// TABLET-VIEW
+@media (min-width: 768px) {
+
+}
+
+// DESKOP-VIEW
+@media (min-width: 1200px) {
+
+  }
