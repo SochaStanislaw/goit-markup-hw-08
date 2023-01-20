@@ -1,45 +1,85 @@
 @import '../utils/vars';
 @import '../utils/transition-style';
 @import '../utils/mixins';
+@import '../utils/display-types';
+
+@media (min-width: $min-view) {
+    .footer-contact {
+
+        &__wrapper {
+            margin-top: 20px;
+            margin-bottom: 60px;
+            font-style: normal;
+            text-align: center;  
+        }
+
+        &__list {
+            list-style-type: none;
+        }
+
+        &__item {
+            margin-top: 8px;
+        }
+
+        &__link {
+            text-decoration: none;
+
+            &--city {
+                color: getColor('pure-white');
+            }
+
+            &--contact {
+                color: getColor('chill-grey');
+            }
+
+            &--active:hover,
+            &--active:focus {
+                @include link-active;
+            }
+        }
+    }
+}
 
 // MOBILE-VIEW
-.footer-contact {
+@media (min-width: $mobile) {
+    .footer-contact {
 
-    &__wrapper {
-        margin-top: 20px;
-        margin-bottom: 60px;
-        font-style: normal;
-        text-align: center;  
-    }
-
-    &__list {
-        list-style-type: none;
-    }
-
-    &__item {
-        margin-top: 8px;
-    }
-
-    &__link {
-        text-decoration: none;
-
-        &--city {
-            color: getColor('pure-white');
+        &__wrapper {
+            margin-top: 20px;
+            margin-bottom: 60px;
+            font-style: normal;
+            text-align: center;  
         }
 
-        &--contact {
-            color: getColor('chill-grey');
+        &__list {
+            list-style-type: none;
         }
 
-        &--active:hover,
-        &--active:focus {
-            @include link-active;
+        &__item {
+            margin-top: 8px;
+        }
+
+        &__link {
+            text-decoration: none;
+
+            &--city {
+                color: getColor('pure-white');
+            }
+
+            &--contact {
+                color: getColor('chill-grey');
+            }
+
+            &--active:hover,
+            &--active:focus {
+                @include link-active;
+            }
         }
     }
 }
 
 // TABLET-VIEW
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
     .footer-contact {
 
         &__wrapper {
@@ -77,7 +117,7 @@
 }
 
 // DESKOP-VIEW
-@media (min-width: 1200px) {
+@media (min-width: $deskop) {
     .footer-contact {
 
         &__wrapper {

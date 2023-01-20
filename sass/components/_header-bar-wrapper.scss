@@ -1,15 +1,31 @@
-// MOBILE
-.header-bar-wrapper {
-    display: flex;
-    // justify-content: space-between;
-    align-items: center;
-    gap: 276;
-    height: 60px;
-    padding: 16px 0 16px 15px;
+@import '../utils/display-types';
+
+// MIN-VIEW-PORT
+@media (min-width: $min-view) {
+    .header-bar-wrapper {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        gap: 276;
+        height: 60px;
+        padding: 16px 0 16px 15px;
     }
+}
+
+// MOBILE
+@media (min-width: $mobile) {
+    .header-bar-wrapper {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        gap: 276;
+        height: 60px;
+        padding: 16px 0 16px 15px;
+    }
+}
 
 // TABLET-VIEW
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
     .header-bar-wrapper {
         display: flex;
         justify-content: space-between;
@@ -20,7 +36,7 @@
 }
 
 // DESKOP-VIEW
-@media (min-width: 1200px) {
+@media (min-width: $deskop) {
     .header-bar-wrapper {
         display: flex;
         justify-content: space-between;

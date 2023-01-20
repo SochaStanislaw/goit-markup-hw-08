@@ -2,14 +2,24 @@
 @import '../utils/borders-styles';
 @import '../utils/transition-style';
 @import '../utils/mixins';
+@import '../utils/display-types';
+
+// MIN-VIEW-PORT
+@media (min-width: $min-view) {
+    .header-nav {
+        display: none;
+    }
+}
 
 // MOBILE-VIEW
-.header-nav {
-    display: none;
+@media (min-width: $mobile) {
+    .header-nav {
+        display: none;
+    }
 }
 
 // TABLET-VIEW
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
     .header-nav {
         display: inline;
         width: 282px;
@@ -61,7 +71,7 @@
 }
 
 // DESKOP-VIEW
-@media (min-width: 1200px) {
+@media (min-width: $deskop) {
     .header-nav {
         display: inline;
         width: 254px;

@@ -1,27 +1,52 @@
 @import '../utils/vars';
+@import '../utils/display-types';
+
+// MIN-VIEW-PORT
+@media (min-width: $min-view) {
+    .section-no-3 {
+
+        &__heading {
+            display: none;
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__item {
+            display: none;
+        }
+
+        &__description-bg {
+            display: none;
+        }
+    }
+}
 
 // MOBILE-VIEW
-.section-no-3 {
+@media (min-width: $mobile) {
+    .section-no-3 {
 
-    &__heading {
-        display: none;
-    }
+        &__heading {
+            display: none;
+        }
 
-    &__list {
-        display: none;
-    }
+        &__list {
+            display: none;
+        }
 
-    &__item {
-        display: none;
-    }
+        &__item {
+            display: none;
+        }
 
-    &__description-bg {
-        display: none;
+        &__description-bg {
+            display: none;
+        }
     }
 }
 
 // TABLET-VIEW
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
     .section-no-3 {
 
             &__heading {
@@ -43,7 +68,7 @@
 }
 
 // DESKOP-VIEW
-@media (min-width: 1200px) {
+@media (min-width: $deskop) {
     .section-no-3 {
 
         &__heading {

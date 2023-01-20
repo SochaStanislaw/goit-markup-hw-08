@@ -1,4 +1,5 @@
 @import '../utils/vars';
+@import '../utils/display-types';
 
 // RATIO DLA BGI!!!
 
@@ -9,36 +10,68 @@
 //     }    
 // }
 
-.section-no-1 {
-    width: 480px;
-    height: 400px;
-    text-align: center;
-    background-color: getColor('light-black');
-    background-image: 
-    linear-gradient(rgba(47, 48, 58, 0.4)50%, rgba(47, 48, 58, 0.4)50%), 
-    url(../../images/background-section-no-1/mobile/bg-image-mobile@1x.jpg);
-    background-size: cover;
-
-    &__heading-padding {
-        padding: 118px 58px 118px 57px;
-    }
-        
-    &__heading-style {
-        margin-bottom: 30px;
+// MIN-VIEW-PORT
+@media (min-width: $min-view) {
+    .section-no-1 {
+        width: 100%;
+        height: 400px;
         text-align: center;
-        text-transform: uppercase;
-        font-weight: 900;
-        font-size: 26px;
-        line-height: 1.62;
-        letter-spacing: 0.06em;
-        color: getColor('pure-white')
+        background-color: getColor('light-black');
+        background-image: 
+        linear-gradient(rgba(47, 48, 58, 0.4)50%, rgba(47, 48, 58, 0.4)50%), 
+        url(../../images/background-section-no-1/mobile/bg-image-mobile@1x.jpg);
+        background-size: cover;
+
+        &__heading-padding {
+            padding: 118px 8px 118px 7px;
+        }
+            
+        &__heading-style {
+            margin-bottom: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 1.62;
+            letter-spacing: 0.06em;
+            color: getColor('pure-white')
+        }
+    }
+}
+
+// MOBILE-VIEW
+@media (min-width: $mobile) {
+    .section-no-1 {
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        background-color: getColor('light-black');
+        background-image: 
+        linear-gradient(rgba(47, 48, 58, 0.4)50%, rgba(47, 48, 58, 0.4)50%), 
+        url(../../images/background-section-no-1/mobile/bg-image-mobile@1x.jpg);
+        background-size: cover;
+
+        &__heading-padding {
+            padding: 118px 58px 118px 57px;
+        }
+            
+        &__heading-style {
+            margin-bottom: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 1.62;
+            letter-spacing: 0.06em;
+            color: getColor('pure-white')
+        }
     }
 }
 
 // TABLET-VIEW
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
     .section-no-1 {
-        width: 768px;
+        width: 100%;
         height: 400px;
         text-align: center;
         background-color: getColor('bg-section-no-1');
@@ -65,7 +98,7 @@
 }
 
 // DESKOP-VIEW
-@media (min-width: 1200px) {
+@media (min-width: $deskop) {
     .section-no-1 {
         width: 100%;
         height: 600px;

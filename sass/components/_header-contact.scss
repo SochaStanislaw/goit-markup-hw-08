@@ -1,14 +1,24 @@
 @import '../utils/vars';
 @import '../utils/transition-style';
 @import '../utils/mixins';
+@import '../utils/display-types';
+
+// MIN-VIEW-PORT
+@media (min-width: $min-view) {
+    .header-contact {
+        display: none;
+    }
+}
 
 // MOBILE-VIEW
-.header-contact {
-    display: none;
+@media (min-width: $mobile) {
+    .header-contact {
+        display: none;
+    }
 }
 
 // TABLET-VIEW
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
     .header-contact {
         display: flex;
         flex-direction: column;
@@ -37,7 +47,7 @@
 }
 
 // DESKOP-VIEW
-@media (min-width: 1200px) {
+@media (min-width: $deskop) {
     .header-contact {
         display: flex;
         flex-direction: row;

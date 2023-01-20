@@ -1,12 +1,25 @@
+@import '../utils/display-types';
+
+// MIN-VIEW-PORT
+@media (min-width: $min-view) {
+    .container {
+        position: relative;
+        margin: 0 auto;
+        max-width: 480px;
+    }
+}
+
 // MOBILE-VIEW
-.container {
-    position: relative;
-    margin: 0 auto;
-    max-width: 480px;
+@media (min-width: $mobile) {
+    .container {
+        position: relative;
+        margin: 0 auto;
+        max-width: 480px;
+    }
 }
 
 // TABLET-VIEW
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
     .container {
         margin: 0 auto;
         max-width: 768px;
@@ -14,22 +27,9 @@
 }
 
 // DESKOP-VIEW
-@media (min-width: 1200px) {
+@media (min-width: $deskop) {
     .container {
         margin: 0 auto;
         max-width: 1200px;
     }
-  }
-
-// MOBILE-VIEW
-
-
-// TABLET-VIEW
-@media (min-width: 768px) {
-
 }
-
-// DESKOP-VIEW
-@media (min-width: 1200px) {
-
-  }

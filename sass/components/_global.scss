@@ -1,5 +1,6 @@
 @import '../utils/vars';
 @import '../utils/fonts';
+@import '../utils/display-types';
 
 * img {
     display: block;
@@ -13,25 +14,29 @@
 }
 
 // MOBILE-VIEW
-body {
-    font-family: $primaryFont;
-    background-color: getColor('pure-white');
-    margin: 0 auto;
-    max-width: 480px;
-}
-
-// TABLET-VIEW
-@media (min-width: 768px) {
+@media (min-width: $min-view) {
     body {
         font-family: $primaryFont;
         background-color: getColor('pure-white');
         margin: 0 auto;
-        max-width: 768px;
+        min-width: 320px;
+    }
+}
+
+
+
+// TABLET-VIEW
+@media (min-width: $tablet) {
+    body {
+        font-family: $primaryFont;
+        background-color: getColor('pure-white');
+        margin: 0 auto;
+        min-width: 768px;
     }
 }
 
 // DESKOP-VIEW
-@media (min-width: 1200px) {
+@media (min-width: $deskop) {
     body {
         font-family: $primaryFont;
         background-color: getColor('pure-white');

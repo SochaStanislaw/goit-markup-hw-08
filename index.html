@@ -494,7 +494,7 @@
 
       <!-- SECTION-NO-3-BEGIN -->
       <!-- SECTION'-SPACE-BEETWEN-BEGIN -->
-      <section class="section">
+      <section class="section section--mobile-display">
         <!-- CONTAINER-1200px-BEGIN -->
         <div class="container">
           <!-- SECTION-NO-3-HEADING-BEGIN -->
@@ -556,25 +556,34 @@
           <!-- SECTION-NO-4-LIST-BEGIN -->
           <ul class="section-no-4__list section-no-4-content-box">
             <li class="section-no-4__item">
-              <img
-                src="./images/team_card/team-card-1/team-card-1-mobile@1x.jpg"
-                srcset="
-                  ./images/team_card/team-card-1/team-card-1-mobile@1x.jpg 450w,
-                  ./images/team_card/team-card-1/team-card-1-mobile@2x.jpg 2x,
-                  ./images/team_card/team-card-1/team-card-1-mobile@2x.jpg 450w,
-
-                  ./images/team_card/team-card-1/team-card-1-tablet@1x.jpg 354w,
-                  ./images/team_card/team-card-1/team-card-1-tablet@2x.jpg 2x,
-                  ./images/team_card/team-card-1/team-card-1-tablet@2x.jpg 354w,
-
-                  ./images/team_card/team-card-1/team-card-1-deskop@1x.jpg 270w,
-                  ./images/team_card/team-card-1/team-card-1-deskop@2x.jpg 2x,
-                  ./images/team_card/team-card-1/team-card-1-deskop@2x.jpg 270w
-                "
-                sizes="450px, (min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
-                alt="John Doe - Product Designer"
-                title="John Doe - Product Designer"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_card/team-card-1/team-card-1-mobile@1x.jpg x1,
+                    ./images/team_card/team-card-1/team-card-1-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card/team-card-1/team-card-1-deskop@1x.jpg,
+                    ./images/team_card/team-card-1/team-card-1-deskop@2x.jpg x2
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card/team-card-1/team-card-1-tablet@1x.jpg,
+                    ./images/team_card/team-card-1/team-card-1-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/team_card/team-card-1/"
+                  alt="John Doe - Product Designer"
+                  title="John Doe - Product Designer"
+                />
+              </picture>
 
               <!-- TEAM-MEMBER-DESCRIPTION-BEGIN -->
               <div class="section-no-4__text-wrapper">
@@ -645,24 +654,34 @@
               <!-- SOCIAL-MEDIA-ICONS-WRAPPER-END -->
             </li>
             <li class="section-no-4__item">
-              <img
-                src="./images/team_card/team-card-2/team-card-2-mobile@1x.jpg"
-                srcset="
-                  ./images/team_card/team-card-2/team-card-2-mobile@1x.jpg 450w,
-                  ./images/team_card/team-card-2/team-card-2-mobile@2x.jpg 2x,
-                  ./images/team_card/team-card-2/team-card-2-mobile@2x.jpg 450w,
-
-                  ./images/team_card/team-card-2/team-card-2-tablet@1x.jpg 354w,
-                  ./images/team_card/team-card-2/team-card-2-tablet@2x.jpg 2x,
-                  ./images/team_card/team-card-2/team-card-2-tablet@2x.jpg 354w,
-
-                  ./images/team_card/team-card-2/team-card-2-deskop@1x.jpg 270w,
-                  ./images/team_card/team-card-2/team-card-2-deskop@2x.jpg 2x,
-                  ./images/team_card/team-card-2/team-card-2-deskop@2x.jpg 270w"
-                sizes="450px, (min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
-                alt="John Doe - Frontend Developer"
-                title="John Doe - Frontend Developer"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_card/team-card-2/team-card-2-mobile@1x.jpg,
+                    ./images/team_card/team-card-2/team-card-2-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card/team-card-2/team-card-2-deskop@1x.jpg,
+                    ./images/team_card/team-card-2/team-card-2-deskop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card/team-card-2/team-card-2-tablet@1x.jpg,
+                    ./images/team_card/team-card-2/team-card-2-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/team_card/team-card-2/"
+                  alt="John Doe - Frontend Developer"
+                  title="John Doe - Frontend Developer"
+                />
+              </picture>
 
               <!-- TEAM-MEMBER-DESCRIPTION-BEGIN -->
               <div class="section-no-4__text-wrapper">
@@ -733,24 +752,34 @@
               <!-- SOCIAL-MEDIA-ICONS-WRAPPER-END -->
             </li>
             <li class="section-no-4__item">
-              <img
-                src="./images/team_card/team-card-3/team-card-3-mobile@1x.jpg"
-                srcset="
-                ./images/team_card/team-card-3/team-card-3-mobile@1x.jpg 450w,
-                ./images/team_card/team-card-3/team-card-3-mobile@2x.jpg 2x,
-                ./images/team_card/team-card-3/team-card-3-mobile@2x.jpg 450w,
-
-                ./images/team_card/team-card-3/team-card-3-tablet@1x.jpg 354w,
-                ./images/team_card/team-card-3/team-card-3-tablet@2x.jpg 2x,
-                ./images/team_card/team-card-3/team-card-3-tablet@2x.jpg 354w,
-
-                ./images/team_card/team-card-3/team-card-3-deskop@1x.jpg 270w,
-                ./images/team_card/team-card-3/team-card-3-deskop@2x.jpg 2x,
-                ./images/team_card/team-card-3/team-card-3-deskop@2x.jpg 270w"
-                sizes="450px, (min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
-                alt="John Doe - Marketing"
-                title="John Doe - Marketing"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_card/team-card-3/team-card-3-mobile@1x.jpg,
+                    ./images/team_card/team-card-3/team-card-3-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card/team-card-3/team-card-3-deskop@1x.jpg,
+                    ./images/team_card/team-card-3/team-card-3-deskop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card/team-card-3/team-card-3-tablet@1x.jpg,
+                    ./images/team_card/team-card-3/team-card-3-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/team_card/team-card-3/"
+                  alt="John Doe - Marketing"
+                  title="John Doe - Marketing"
+                />
+              </picture>
 
               <!-- TEAM-MEMBER-DESCRIPTION-BEGIN -->
               <div class="section-no-4__text-wrapper">
@@ -819,24 +848,34 @@
               <!-- SOCIAL-MEDIA-ICONS-WRAPPER-END -->
             </li>
             <li class="section-no-4__item">
-              <img
-                src="./images/team_card/team-card-4/team-card-4-mobile@1x.jpg"
-                srcset="
-                ./images/team_card/team-card-4/team-card-4-mobile@1x.jpg 450w,
-                ./images/team_card/team-card-4/team-card-4-mobile@2x.jpg 2x,
-                ./images/team_card/team-card-4/team-card-4-mobile@2x.jpg 450w,
-
-                ./images/team_card/team-card-4/team-card-4-tablet@1x.jpg 354w,
-                ./images/team_card/team-card-4/team-card-4-tablet@2x.jpg 2x,
-                ./images/team_card/team-card-4/team-card-4-tablet@2x.jpg 354w,
-
-                ./images/team_card/team-card-4/team-card-4-deskop@1x.jpg 270w,
-                ./images/team_card/team-card-4/team-card-4-deskop@2x.jpg 2x,
-                ./images/team_card/team-card-4/team-card-4-deskop@2x.jpg 270w"
-                sizes="450px, (min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
-                alt="John Doe - UI Designer"
-                title="John Doe - UI Designer"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_card/team-card-4/team-card-4-mobile@1x.jpg,
+                    ./images/team_card/team-card-4/team-card-4-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card/team-card-4/team-card-4-deskop@1x.jpg,
+                    ./images/team_card/team-card-4/team-card-4-deskop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card/team-card-4/team-card-4-tablet@1x.jpg,
+                    ./images/team_card/team-card-4/team-card-4-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/team_card/team-card-4/"
+                  alt="John Doe - UI Designer"
+                  title="John Doe - UI Designer"
+                />
+              </picture>
 
               <!-- TEAM-MEMBER-DESCRIPTION-BEGIN -->
               <div class="section-no-4__text-wrapper">
@@ -1029,80 +1068,84 @@
           </div>
           <!-- CONTAINER-1200px-END -->
 
-          <!-- SOCIAL-MEDIA-ICONS-WRAPPER-BEGIN -->
-          <div
-            class="social-container__wrapper social-container__wrapper--footer-display"
-          >
-            <!-- SOCIAL-MEDIA-ICONS-HEADING-BEGIN -->
-            <p class="social-container__heading">dołącz do nas</p>
-            <!-- SOCIAL-MEDIA-ICONS-HEADING-BEGIN -->
-
-            <!-- SOCIAL-MEDIA-ICONS-LIST-BEGIN -->
-            <ul
-              class="social-container__wrapper social-container__wrapper--footer-style"
+          <!-- CONTAINER-1200px-BEGIN -->
+          <div class="container">
+            <!-- SOCIAL-MEDIA-ICONS-WRAPPER-BEGIN -->
+            <div
+              class="social-container__wrapper social-container__wrapper--footer-display"
             >
-              <li>
-                <a
-                  class="social-icon social-icon--footer-theme social-icon--active"
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                >
-                  <svg width="44px" height="44px">
-                    <use
-                      href="./images/SVG/nasz zespół-social icons.svg#icon-instagram-2"
-                      width="20px"
-                      x="12px"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="social-icon social-icon--footer-theme social-icon--active"
-                  href="https://twitter.com/"
-                  target="_blank"
-                >
-                  <svg width="44px" height="44px">
-                    <use
-                      href="./images/SVG/nasz zespół-social icons.svg#icon-twitter-1"
-                      width="20px"
-                      x="12px"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="social-icon social-icon--footer-theme social-icon--active"
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                >
-                  <svg width="44px" height="44px">
-                    <use
-                      href="./images/SVG/nasz zespół-social icons.svg#icon-facebook-1"
-                      width="20px"
-                      x="12px"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="social-icon social-icon--footer-theme social-icon--active"
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                >
-                  <svg width="44px" height="44px">
-                    <use
-                      href="./images/SVG/nasz zespół-social icons.svg#icon-linkedin-1"
-                      width="20px"
-                      x="12px"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <!-- SOCIAL-MEDIA-ICONS-LIST-END -->
+              <!-- SOCIAL-MEDIA-ICONS-HEADING-BEGIN -->
+              <p class="social-container__heading">dołącz do nas</p>
+              <!-- SOCIAL-MEDIA-ICONS-HEADING-BEGIN -->
+
+              <!-- SOCIAL-MEDIA-ICONS-LIST-BEGIN -->
+              <ul
+                class="social-container__wrapper social-container__wrapper--footer-style"
+              >
+                <li>
+                  <a
+                    class="social-icon social-icon--footer-theme social-icon--active"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                  >
+                    <svg width="44px" height="44px">
+                      <use
+                        href="./images/SVG/nasz zespół-social icons.svg#icon-instagram-2"
+                        width="20px"
+                        x="12px"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="social-icon social-icon--footer-theme social-icon--active"
+                    href="https://twitter.com/"
+                    target="_blank"
+                  >
+                    <svg width="44px" height="44px">
+                      <use
+                        href="./images/SVG/nasz zespół-social icons.svg#icon-twitter-1"
+                        width="20px"
+                        x="12px"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="social-icon social-icon--footer-theme social-icon--active"
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                  >
+                    <svg width="44px" height="44px">
+                      <use
+                        href="./images/SVG/nasz zespół-social icons.svg#icon-facebook-1"
+                        width="20px"
+                        x="12px"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="social-icon social-icon--footer-theme social-icon--active"
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                  >
+                    <svg width="44px" height="44px">
+                      <use
+                        href="./images/SVG/nasz zespół-social icons.svg#icon-linkedin-1"
+                        width="20px"
+                        x="12px"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <!-- SOCIAL-MEDIA-ICONS-LIST-END -->
+            </div>
+            <!-- CONTAINER-1200px-END -->
           </div>
           <!-- SOCIAL-MEDIA-ICONS-WRAPPER-END -->
         </div>

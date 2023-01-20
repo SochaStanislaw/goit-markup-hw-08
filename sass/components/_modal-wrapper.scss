@@ -1,15 +1,47 @@
 @import '../utils/vars';
 @import '../utils/borders-styles';
+@import '../utils/display-types';
 
-// SMARTPHONE-VIEW
-// TABLET-VIEW
-@media (max-width: 1200px) {
+// MIN-VIEW-PORT
+@media (min-width: $min-view) {
     .modal-wrapper {
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 528px;
-        height: 581px;
+        width: 100vw;
+        height: 609px;
+        background-color: getColor('pure-white');
+        border-radius: getBr('br-thick');
+        box-shadow: getBs('bs-global');
+        z-index: 2;
+        transform: translate(-50%, -50%);
+    }
+}
+
+// MOBILE-VIEW
+@media (min-width: $mobile) {
+    .modal-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 450px;
+        height: 609px;
+        background-color: getColor('pure-white');
+        border-radius: getBr('br-thick');
+        box-shadow: getBs('bs-global');
+        z-index: 2;
+        transform: translate(-50%, -50%);
+    }
+}
+
+// TABLET-VIEW
+@media (min-width: $tablet) {
+    .modal-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 450px;
+        height: 609px;
         background-color: getColor('pure-white');
         border-radius: getBr('br-thick');
         box-shadow: getBs('bs-global');
@@ -19,7 +51,7 @@
 }
 
 // DESKOP-VIEW
-@media (min-width: 1200px) {
+@media (min-width: $deskop) {
     .modal-wrapper {
         position: absolute;
         top: 50%;

@@ -1,25 +1,53 @@
 @import '../utils/fonts';
+@import '../utils/display-types';
+
+// MIN-VIEW-PORT
+@media (min-width: $min-view) {
+    .web-title {
+        font-family: $secondFont;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.67;
+        letter-spacing: 0.03em;
+        color: #2196F3;
+        text-decoration: none;
+
+        &--header-margin {
+            margin-right: 0;
+        }
+        
+        &--header-color {
+            color: getColor('dark-black');
+        }
+
+        &--footer-color {
+            color: getColor('pure-white');
+        }
+    }
+}
 
 // MOBILE-VIEW
-.web-title {
-    font-family: $secondFont;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.67;
-    letter-spacing: 0.03em;
-    color: #2196F3;
-    text-decoration: none;
+@media (min-width: $mobile) {
+    .web-title {
+        font-family: $secondFont;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.67;
+        letter-spacing: 0.03em;
+        color: #2196F3;
+        text-decoration: none;
 
-    &--header-margin {
-        margin-right: 0;
-    }
-    
-    &--header-color {
-        color: getColor('dark-black');
-    }
+        &--header-margin {
+            margin-right: 0;
+        }
+        
+        &--header-color {
+            color: getColor('dark-black');
+        }
 
-    &--footer-color {
-        color: getColor('pure-white');
+        &--footer-color {
+            color: getColor('pure-white');
+        }
     }
 }
 
