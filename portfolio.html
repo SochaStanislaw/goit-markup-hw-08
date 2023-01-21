@@ -22,10 +22,102 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <!-- MOBILE-MENU-WRAPPER-BEGIN -->
+    <div class="mobile-menu js-menu-container">
+      <!-- MOBILE-MENU-CLOSE-BTN-ICON-BEGIN -->
+      <button class="btn-close-mobile btn-close-mobile--active">
+        <svg class="btn-close-mobile__icon js-close-menu">
+          <use
+            href="./images/SVG/modal-box-close.svg#icon-close-black-18dp-2-1"
+            width="31px"
+            height="31px"
+            x="-2px"
+            y="16px"
+          ></use>
+        </svg>
+      </button>
+      <!-- MOBILE-MENU-CLOSE-BTN-ICON-END -->
+
+      <!-- MOBILE-NAVIGATION-BEGIN -->
+      <ul class="mobile-menu__nav-list">
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link" href="./index.html">Agencja</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a
+            class="mobile-menu__nav-link mobile-menu__nav-link--portfolio-active"
+            href="./portfolio.html"
+            >Portfolio</a
+          >
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a
+            class="mobile-menu__nav-link mobile-menu__nav-link--active"
+            href="./index.html"
+            >Kontakt</a
+          >
+        </li>
+      </ul>
+      <!-- MOBILE-NAVIGATION-END -->
+
+      <!-- MOBILE-CONTACTS-BEGIN -->
+      <ul class="mobile-menu__contact-list">
+        <li class="mobile-menu__contact-item">
+          <a class="mobile-menu__contact-phone" href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
+        </li>
+        <li class="mobile-menu__contact-item">
+          <a class="mobile-menu__contact-mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <!-- MOBILE-CONTACTS-END -->
+
+      <!-- MOBILE-SOCIALS-BEGIN -->
+      <ul class="mobile-menu__social-list">
+        <li class="mobile-menu__social-item">
+          <a
+            class="mobile-menu__social-link mobile-menu__social-link--active"
+            href="https://www.instagram.com/"
+            target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li class="mobile-menu__social-item">
+          <a
+            class="mobile-menu__social-link mobile-menu__social-link--active"
+            href="https://twitter.com/"
+            target="_blank"
+            >Twitter</a
+          >
+        </li>
+        <li class="mobile-menu__social-item">
+          <a
+            class="mobile-menu__social-link mobile-menu__social-link--active"
+            href="https://www.facebook.com/"
+            target="_blank"
+            >Facebook</a
+          >
+        </li>
+        <li class="mobile-menu__social-item">
+          <a
+            class="mobile-menu__social-link mobile-menu__social-link--active"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            >Linkedln</a
+          >
+        </li>
+      </ul>
+      <!-- MOBILE-SOCIALS-END -->
+    </div>
+    <!-- MOBILE-MENU-WRAPPER-END -->
+
     <!-- HEADER-BAR-BEGIN -->
     <header class="header-bar-border">
       <!-- CONTAINER-1200px-BEGIN -->
-      <div class="container">
+      <div class="container container--mobile-display">
         <!-- HEADER-BAR-WRAPPER-BEGIN -->
         <div class="header-bar-wrapper">
           <!-- WEB-PAGE-TITLE-STYLE-BEGIN -->
@@ -37,16 +129,16 @@
           <!-- HEADER-NAVIGATION-BEGIN -->
           <nav class="header-nav">
             <ul class="header-nav__list">
-              <li>
+              <li
+                class="header-nav__underline-global-style header-nav__underline-main-style header-nav__item--active-color"
+              >
                 <a
                   class="header-nav__link header-nav__link--active"
                   href="./index.html"
                   >Agencja</a
                 >
               </li>
-              <li
-                class="header-nav__underline-global-style header-nav__underline-main-style header-nav__item--active-color"
-              >
+              <li>
                 <a
                   class="header-nav__link header-nav__link--active"
                   href="./portfolio.html"
@@ -565,5 +657,18 @@
       <!-- FOOTER-BAR-WRAPPER-END -->
     </footer>
     <!-- FOOTER-BAR-END -->
+
+    <!-- MOBILE-MENU-bodyScrollLock-BEGIN -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- MOBILE-MENU-bodyScrollLock-END -->
+
+    <!-- MOBILE-MENU-SCRIPT-JS-BEGIN -->
+    <script defer src="js/mobile-menu.js"></script>
+    <!-- MOBILE-MENU-SCRIPT-JS-END -->
   </body>
 </html>

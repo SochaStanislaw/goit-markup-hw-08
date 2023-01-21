@@ -3,7 +3,7 @@
 // MIN-VIEW-PORT
 @media (min-width: $min-view) {
     .container {
-        position: relative;
+        // position: relative;
         margin: 0 auto;
         max-width: 480px;
     }
@@ -12,9 +12,13 @@
 // MOBILE-VIEW
 @media (min-width: $mobile) {
     .container {
-        position: relative;
+        // position: relative;
         margin: 0 auto;
         max-width: 480px;
+
+        &--mobile-display {
+            max-width: 100vw;
+        }
 
         &--footer-contact {
             margin: 0;

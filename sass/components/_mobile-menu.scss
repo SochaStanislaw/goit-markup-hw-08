@@ -6,12 +6,13 @@
 // MIN-VIEW-PORT
 @media (min-width: $min-view) {
     .mobile-menu {
+        overflow:scroll;
         position: fixed;
         z-index: 3;
         top: 0;
         right: 0;
         opacity: 0;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         padding: 48px 15px 48px 20px;
         background-color: #ffffff;
@@ -50,14 +51,14 @@
         }
     
         &__contact-list {
-            margin-top: 40px;
+            margin-top: 302px;
             font-weight: 500;
             letter-spacing: 0.02em;
             list-style-type: none;
         }
     
         &__contact-item:not(:last-child) {
-            margin-bottom: 22px;
+            margin-bottom: 32px;
         }
     
         &__contact-phone {
@@ -108,7 +109,7 @@
         top: 0;
         right: 0;
         opacity: 0;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         padding: 48px 15px 48px 40px;
         background-color: #ffffff;
