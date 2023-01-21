@@ -1,16 +1,8 @@
 @import '../utils/display-types';
 
 // MIN-VIEW-PORT
-@media (min-width: $min-view) {
-    .container {
-        // position: relative;
-        margin: 0 auto;
-        max-width: 480px;
-    }
-}
-
 // MOBILE-VIEW
-@media (min-width: $mobile) {
+@media (min-width: $min-view) {
     .container {
         // position: relative;
         margin: 0 auto;
@@ -29,7 +21,6 @@
 // TABLET-VIEW
 @media (min-width: $tablet) {
     .container {
-        margin: 0 auto;
         max-width: 768px;
     }
 }
@@ -37,7 +28,6 @@
 // DESKOP-VIEW
 @media (min-width: $deskop) {
     .container {
-        margin: 0 auto;
         max-width: 1200px;
     }
 }

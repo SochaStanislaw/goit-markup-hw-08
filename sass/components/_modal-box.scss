@@ -18,49 +18,17 @@
 }
 
 // MOBILE-VIEW
+// TABLET-VIEW
 @media (min-width: $mobile) {
     .modal-box__heading {
-        position: absolute;
-        text-align: center;
-        top: 40px;
         left: 40px;
         width: 370px;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 23px;
-        letter-spacing: 0.03em;
-        color: getColor('light-black');
-    }
-}
-
-// TABLET-VIEW
-@media (min-width: $tablet) {
-    .modal-box__heading {
-        position: absolute;
-        text-align: center;
-        top: 40px;
-        left: 40px;
-        width: 370px;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 23px;
-        letter-spacing: 0.03em;
-        color: getColor('light-black');
     }
 }
 
 // DESKOP-VIEW
 @media (min-width: $deskop) {
     .modal-box__heading {
-        position: absolute;
-        text-align: center;
-        top: 40px;
-        left: 40px;
         width: 448px;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 23px;
-        letter-spacing: 0.03em;
-        color: getColor('light-black');
     }
 }

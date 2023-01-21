@@ -5,14 +5,8 @@
 @import '../utils/display-types';
 
 // MIN-VIEW-PORT
-@media (min-width: $min-view) {
-    .header-nav {
-        display: none;
-    }
-}
-
 // MOBILE-VIEW
-@media (min-width: $mobile) {
+@media (min-width: $min-view) {
     .header-nav {
         display: none;
     }
@@ -73,51 +67,7 @@
 // DESKOP-VIEW
 @media (min-width: $deskop) {
     .header-nav {
-        display: inline;
         width: 254px;
         margin-right: 315px;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: getColor('light-black');
-
-        &__list {
-            display: flex;
-            justify-content: space-between;
-            list-style-type: none;
-        }
-        
-        &__underline-global-style::after {
-            position: absolute;
-            top: 45.5px;
-            left: 0;
-            content: '';
-            border-bottom: getB('b-bold-blue');
-            border-radius: getBr('br-thick');
-        }
-        
-        &__underline-main-style::after {
-            width: 53px;
-        }
-        
-        &__underline-portfolio-style::after {
-            width: 58px;
-        }
-        
-        &__item--active-color {
-            position: relative;
-            color: getColor('global-blue');
-        }
-
-        &__link {
-            color: getColor('font-link');
-            text-decoration: none;
-
-            &--active:hover,
-            &--active:focus {
-                @include link-active;
-            }
-        }
     }
 }

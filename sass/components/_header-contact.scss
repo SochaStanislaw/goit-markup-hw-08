@@ -4,14 +4,8 @@
 @import '../utils/display-types';
 
 // MIN-VIEW-PORT
-@media (min-width: $min-view) {
-    .header-contact {
-        display: none;
-    }
-}
-
 // MOBILE-VIEW
-@media (min-width: $mobile) {
+@media (min-width: $min-view) {
     .header-contact {
         display: none;
     }
@@ -22,12 +16,13 @@
     .header-contact {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         gap: 10px;
         color: getColor('medium-grey');
         fill: getColor('medium-grey');
         font-weight: 500;
         font-size: 12px;
-        // line-height: 1.14;
+        line-height: 1.14;
         letter-spacing: 0.02em;
         list-style-type: none;
     
@@ -49,29 +44,12 @@
 // DESKOP-VIEW
 @media (min-width: $deskop) {
     .header-contact {
-        display: flex;
         flex-direction: row;
-        justify-content: space-between;
         gap: 30px;
-        color: getColor('medium-grey');
-        fill: getColor('medium-grey');
-        font-weight: 500;
         font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        list-style-type: none;
 
         &__link {
-            display: flex;
-            align-items: center;
             gap: 10px;
-            color: getColor('font-link');
-            text-decoration: none;
-        
-            &--active:hover,
-            &--active:focus {
-                @include link-active;
-            }
         }
     }
 }

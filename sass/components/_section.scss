@@ -12,18 +12,8 @@
 }
 
 // MOBILE-VIEW
-@media (min-width: $mobile) {
-    .section {
-        padding-bottom: 60px;
-
-        &--mobile-display {
-            padding: 0;
-        }
-    }
-}
-
 // TABLET-VIEW
-@media (min-width: $tablet) {
+@media (min-width: $mobile) {
     .section {
         padding-bottom: 60px;
 

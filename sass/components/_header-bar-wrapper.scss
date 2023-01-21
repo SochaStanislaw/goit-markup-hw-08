@@ -1,25 +1,13 @@
 @import '../utils/display-types';
 
 // MIN-VIEW-PORT
+// MOBILE
 @media (min-width: $min-view) {
     .header-bar-wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // gap: 276;
-        // height: 60px;
-        padding: 16px 0 16px 15px;
-    }
-}
-
-// MOBILE
-@media (min-width: $mobile) {
-    .header-bar-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        // gap: 276;
-        // height: 60px;
+        height: 60px;
         padding: 16px 0 16px 15px;
     }
 }
@@ -27,9 +15,6 @@
 // TABLET-VIEW
 @media (min-width: $tablet) {
     .header-bar-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         height: 80px;
         padding: 21px 15px 21px 15px;
     }
@@ -38,10 +23,6 @@
 // DESKOP-VIEW
 @media (min-width: $deskop) {
     .header-bar-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 80px;
         padding: 24px 27px 25px 15px;
     }
-  }
+}

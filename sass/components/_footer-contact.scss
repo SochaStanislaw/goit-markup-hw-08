@@ -3,6 +3,9 @@
 @import '../utils/mixins';
 @import '../utils/display-types';
 
+// MIN-VIEW-PORT
+// MOBILE-VIEW
+// TABLET-VIEW
 @media (min-width: $min-view) {
     .footer-contact {
 
@@ -40,95 +43,12 @@
     }
 }
 
-// MOBILE-VIEW
-@media (min-width: $mobile) {
-    .footer-contact {
-
-        &__wrapper {
-            margin-top: 20px;
-            margin-bottom: 60px;
-            font-style: normal;
-            text-align: center;  
-        }
-
-        &__list {
-            list-style-type: none;
-        }
-
-        &__item {
-            margin-top: 8px;
-        }
-
-        &__link {
-            text-decoration: none;
-
-            &--city {
-                color: getColor('pure-white');
-            }
-
-            &--contact {
-                color: getColor('chill-grey');
-            }
-
-            &--active:hover,
-            &--active:focus {
-                @include link-active;
-            }
-        }
-    }
-}
-
-// TABLET-VIEW
-@media (min-width: $tablet) {
-    .footer-contact {
-
-        &__wrapper {
-            margin-top: 20px;
-            margin-bottom: 60px;
-            font-style: normal;    
-            text-align: center;  
-        }
-
-        &__list {
-            list-style-type: none;
-        }
-
-        &__item {
-            margin-top: 8px;
-        }
-
-        &__link {
-            text-decoration: none;
-
-            &--city {
-                color: getColor('pure-white');
-            }
-
-            &--contact {
-                color: getColor('chill-grey');
-            }
-
-            &--active:hover,
-            &--active:focus {
-                @include link-active;
-            }
-        }
-    }
-}
-
 // DESKOP-VIEW
 @media (min-width: $deskop) {
     .footer-contact {
 
-        &__wrapper {
-            margin-top: 20px;
-            margin-bottom: 0;
-            font-style: normal;    
+        &__wrapper { 
             text-align: left;  
-        }
-
-        &__list {
-            list-style-type: none;
         }
 
         &__item {
@@ -136,23 +56,6 @@
 
             &--city {
                 margin-top: 20px;
-            }
-        }
-
-        &__link {
-            text-decoration: none;
-
-            &--city {
-                color: getColor('pure-white');
-            }
-
-            &--contact {
-                color: getColor('chill-grey');
-            }
-
-            &--active:hover,
-            &--active:focus {
-                @include link-active;
             }
         }
     }

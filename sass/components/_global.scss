@@ -13,6 +13,7 @@
     padding: 0;
 }
 
+// MIN-VIEW-PORT
 // MOBILE-VIEW
 @media (min-width: $min-view) {
     body {
@@ -23,14 +24,9 @@
     }
 }
 
-
-
 // TABLET-VIEW
 @media (min-width: $tablet) {
     body {
-        font-family: $primaryFont;
-        background-color: getColor('pure-white');
-        margin: 0 auto;
         min-width: 768px;
     }
 }
@@ -38,9 +34,6 @@
 // DESKOP-VIEW
 @media (min-width: $deskop) {
     body {
-        font-family: $primaryFont;
-        background-color: getColor('pure-white');
-        margin: 0 auto;
         max-width: 1600px;
     }
 }

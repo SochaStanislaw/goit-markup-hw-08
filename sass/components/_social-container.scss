@@ -38,28 +38,11 @@
 @media (min-width: $mobile) {
     .social-container {
 
-        &__heading {
-            @include footer-headings;
-            margin-bottom: 20px;
-        }
-
         &__wrapper {
-            display: flex;
 
             &--section-no-4-style {
                 justify-content: space-between;
                 padding: 16px 122px 24px 122px;
-            }
-            
-            &--footer-display {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            &--footer-style {
-                gap: 10px;
-                list-style-type: none;
             }
         }
     }
@@ -69,28 +52,11 @@
 @media (min-width: $tablet) {
     .social-container {
 
-        &__heading {
-            @include footer-headings;
-            margin-bottom: 20px;
-        }
-
         &__wrapper {
-            display: flex;
 
             &--section-no-4-style {
                 justify-content: space-between;
                 padding: 16px 74px 24px 74px;
-            }
-            
-            &--footer-display {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            &--footer-style {
-                gap: 10px;
-                list-style-type: none;
             }
         }
     }
@@ -100,28 +66,11 @@
 @media (min-width: $deskop) {
     .social-container {
 
-        &__heading {
-            @include footer-headings;
-            margin-bottom: 20px;
-        }
-
         &__wrapper {
-            display: flex;
 
             &--section-no-4-style {
                 justify-content: space-between;
                 padding: 16px 32px 30px 32px;
-            }
-            
-            &--footer-display {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            &--footer-style {
-                gap: 10px;
-                list-style-type: none;
             }
         }
     }

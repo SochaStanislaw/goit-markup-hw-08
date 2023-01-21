@@ -40,29 +40,13 @@
     .btn-blue {
         width: 200px;
         height: 50px;
-        background: getColor('global-blue');
-        border: none;
-        border-radius: getBr('br-thick');
-        box-shadow: getBs('bs-thick-black');
-        color: getColor('pure-white');
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 1.88;
-        letter-spacing: 0.06em;
-
+        
         &--modal-submit {
             margin: 74px 85px;
         }
 
         &--newsletter-submit {
             padding: 10px 75px 10px 42px;
-        }
-
-        &--active:hover,
-        &--active:focus {
-            background: getColor('global-blue-transparent');
-            transition: getAnimation('global-theme');
-            cursor: pointer;
         }
     }
 }
@@ -70,17 +54,6 @@
 // TABLET-VIEW
 @media (min-width: $tablet) {
     .btn-blue {
-        width: 200px;
-        height: 50px;
-        background: getColor('global-blue');
-        border: none;
-        border-radius: getBr('br-thick');
-        box-shadow: getBs('bs-thick-black');
-        color: getColor('pure-white');
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 1.88;
-        letter-spacing: 0.06em;
 
         &--modal-submit {
             margin: 74px 85px;
@@ -89,30 +62,12 @@
         &--newsletter-submit {
             padding: 10px 75px 10px 42px;
         }
-
-        &--active:hover,
-        &--active:focus {
-            background: getColor('global-blue-transparent');
-            transition: getAnimation('global-theme');
-            cursor: pointer;
-        }
     }
 }
 
 // DESKOP-VIEW
 @media (min-width: $deskop) {
     .btn-blue {
-        width: 200px;
-        height: 50px;
-        background: getColor('global-blue');
-        border: none;
-        border-radius: getBr('br-thick');
-        box-shadow: getBs('bs-thick-black');
-        color: getColor('pure-white');
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 1.88;
-        letter-spacing: 0.06em;
 
         &--modal-submit {
             margin: 74px 124px;
@@ -120,13 +75,6 @@
 
         &--newsletter-submit {
             padding: 10px 75px 10px 42px;
-        }
-
-        &--active:hover,
-        &--active:focus {
-            background: getColor('global-blue-transparent');
-            transition: getAnimation('global-theme');
-            cursor: pointer;
         }
     }
 }

@@ -4,6 +4,9 @@
 @import '../utils/display-types';
 
 // MIN-PORT-VIEW
+// MOBILE-VIEW
+// TABLET-VIEW
+// DESKOP-VIEW
 @media (min-width: $min-view) {
     .btn-close {
         position: absolute;
@@ -31,91 +34,3 @@
         }
     }
 }
-
-// MOBILE-VIEW
-@media (min-width: $mobile) {
-    .btn-close {
-        position: absolute;
-        top: 8px;
-        right: 10px;
-        width: 30px;
-        height: 30px;
-        background: getColor('pure-white');
-        border: getB('b-light-black');
-        border-radius: getBr('br-round');
-
-        &__icon {
-            width: 100%;
-            height: 100%;
-            border-radius: getBr('br-round');
-        }
-    
-        &--active:hover,
-        &--active:focus {
-            outline: none;
-            background-color: getColor('global-blue');
-            fill: getColor('pure-white');
-            transition: getAnimation('global-theme');
-            cursor: pointer;
-        }
-    }
-}
-
-// TABLET-VIEW
-@media (min-width: $tablet) {
-    .btn-close {
-        position: absolute;
-        top: 8px;
-        right: 10px;
-        width: 30px;
-        height: 30px;
-        background: getColor('pure-white');
-        border: getB('b-light-black');
-        border-radius: getBr('br-round');
-    
-        &__icon {
-            width: 100%;
-            height: 100%;
-            border-radius: getBr('br-round');
-        }
-    
-        &--active:hover,
-        &--active:focus {
-            outline: none;
-            background-color: getColor('global-blue');
-            fill: getColor('pure-white');
-            transition: getAnimation('global-theme');
-            cursor: pointer;
-        }
-    }
-}
-
-// DESKOP-VIEW
-@media (min-width: $deskop) {
-    .btn-close {
-        position: absolute;
-        top: 8px;
-        right: 10px;
-        width: 30px;
-        height: 30px;
-        background: getColor('pure-white');
-        border: getB('b-light-black');
-        border-radius: getBr('br-round');
-    
-        &__icon {
-            width: 100%;
-            height: 100%;
-            border-radius: getBr('br-round');
-        }
-    
-        &--active:hover,
-        &--active:focus {
-            outline: none;
-            background-color: getColor('global-blue');
-            fill: getColor('pure-white');
-            transition: getAnimation('global-theme');
-            cursor: pointer;
-        }
-    }
-}
-
