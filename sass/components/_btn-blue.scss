@@ -6,7 +6,7 @@
 // MIN-VIEW-PORT
 @media (min-width: $min-view) {
     .btn-blue {
-        width: 100vw;
+        width: 42vw;
         height: 50px;
         background: getColor('global-blue');
         border: none;
@@ -17,9 +17,9 @@
         font-weight: 700;
         line-height: 1.88;
         letter-spacing: 0.06em;
-
+        
         &--modal-submit {
-            margin: 74px auto;
+            margin: 74px 80px 0px 80px;
         }
 
         &--newsletter-submit {

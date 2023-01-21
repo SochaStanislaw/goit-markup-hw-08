@@ -3,7 +3,7 @@
 // // MIN-VIEW-PORT
 @media (min-width: $min-view) {
     .section {
-        padding-bottom: 47px;
+        padding-bottom: 30px;
 
         &--mobile-display {
             padding: 0;
@@ -14,7 +14,7 @@
 // MOBILE-VIEW
 @media (min-width: $mobile) {
     .section {
-        padding-bottom: 94px;
+        padding-bottom: 60px;
 
         &--mobile-display {
             padding: 0;
@@ -25,7 +25,7 @@
 // TABLET-VIEW
 @media (min-width: $tablet) {
     .section {
-        padding-bottom: 94px;
+        padding-bottom: 60px;
 
         &--mobile-display {
             padding: 0;

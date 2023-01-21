@@ -33,17 +33,19 @@
         }
     
         &__nav-item:not(:last-child) {
-            margin: 32px 0 ;
+            margin: 0 ;
         }
     
         &__nav-link {
             text-decoration: none;
             color: #212121;
-    
-            &--active:hover,
-            &--active:focus {
+
+            &--main-active {
                 color: #2196F3;
-                transition: getAnimation('global-theme');
+            }
+
+            &--portfolio-active {
+                color: #2196F3;
             }
         }
     
@@ -60,7 +62,7 @@
     
         &__contact-phone {
             text-decoration: none;
-            color: #757575;
+            color: #2196F3;
             font-size: 34px;
             line-height: 40px;
         }
@@ -71,13 +73,7 @@
             font-size: 24px;
             line-height: 28px;
         }
-    
-        &__contact--active:hover,
-        &__contact--active:focus {
-            color: #2196F3;
-            transition: getAnimation('global-theme');
-        }
-    
+        
         &__social-list {
             display: flex;
             flex-wrap: wrap;
@@ -98,15 +94,9 @@
         }
     
         &__social-link {
-            color: #757575;
+            color: #2196F3;
     
             text-decoration: none;
-    
-            &--active:hover,
-            &--active:focus {
-                color: #2196F3;
-                transition: getAnimation('global-theme');
-            }
         }
     }
 }
@@ -136,23 +126,23 @@
             font-size: 40px;
             line-height: 1.175;
             letter-spacing: 0.02em;
-
             list-style-type: none;
         }
 
         &__nav-item:not(:last-child) {
-            margin: 32px 0 ;
+            margin-bottom: 32px;
         }
 
         &__nav-link {
-            
             text-decoration: none;
             color: #212121;
 
-            &--active:hover,
-            &--active:focus {
+            &--main-active {
                 color: #2196F3;
-                transition: getAnimation('global-theme');
+            }
+
+            &--portfolio-active {
+                color: #2196F3;
             }
         }
 
@@ -169,7 +159,7 @@
 
         &__contact-phone {
             text-decoration: none;
-            color: #757575;
+            color: #2196F3;
             font-size: 34px;
             line-height: 40px;
         }
@@ -179,12 +169,6 @@
             color: #757575;
             font-size: 24px;
             line-height: 28px;
-        }
-
-        &__contact--active:hover,
-        &__contact--active:focus {
-            color: #2196F3;
-            transition: getAnimation('global-theme');
         }
 
         &__social-list {
@@ -205,7 +189,7 @@
         }
 
         &__social-link {
-            color: #757575;
+            color: #2196F3;
 
             text-decoration: none;
 
