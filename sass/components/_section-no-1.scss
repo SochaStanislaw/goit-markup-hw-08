@@ -28,34 +28,12 @@
             color: getColor('pure-white')
         }
     }
-}
 
-@media screen and (min-device-pixel-ratio: 2),
-screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx) {
-    .section-no-1 {
-        width: 100%;
-        height: 400px;
-        text-align: center;
-        background-color: getColor('light-black');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .section-no-1 {
         background-image: 
         linear-gradient(rgba(47, 48, 58, 0.4)50%, rgba(47, 48, 58, 0.4)50%), 
         url(../images/background-section-no-1/bg-image-mobile@2x.jpg);
-        background-size: cover;
-
-        &__heading-padding {
-            padding: 118px 0px 118px 0px;
-        }
-            
-        &__heading-style {
-            margin-bottom: 30px;
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: 900;
-            font-size: 26px;
-            line-height: 1.62;
-            letter-spacing: 0.06em;
-            color: getColor('pure-white')
         }
     }
 }
@@ -87,10 +65,18 @@ screen and (min-resolution: 2dppx) {
             color: getColor('pure-white')
         }
     }
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .section-no-1 {
+        background-image: 
+        linear-gradient(rgba(47, 48, 58, 0.4)50%, rgba(47, 48, 58, 0.4)50%), 
+        url(../images/background-section-no-1/bg-image-mobile@2x.jpg);
+        }
+    }
 }
 
 // TABLET-VIEW
-@media (min-width: $tablet) {
+@media (min-width: $tablet) and (max-width: 1199px) {
     .section-no-1 {
         width: 100%;
         height: 400px;
@@ -114,6 +100,14 @@ screen and (min-resolution: 2dppx) {
             line-height: 1.62;
             letter-spacing: 0.06em;
             color: getColor('pure-white')
+        }
+    }
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .section-no-1 {
+        background-image: 
+        linear-gradient(rgba(47, 48, 58, 0.4)50%, rgba(47, 48, 58, 0.4)50%), 
+        url(../images/background-section-no-1/bg-image-tablet@2x.jpg);
         }
     }
 }
@@ -142,6 +136,14 @@ screen and (min-resolution: 2dppx) {
             line-height: 1.36;
             letter-spacing: 0.06em;
             color: getColor('pure-white')
+        }
+    }
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .section-no-1 {
+        background-image: 
+        linear-gradient(rgba(47, 48, 58, 0.4)50%, rgba(47, 48, 58, 0.4)50%), 
+        url(../images/background-section-no-1/bg-image-deskop@2x.jpg);
         }
     }
 }
