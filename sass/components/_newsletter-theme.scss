@@ -57,6 +57,7 @@
 // MOBILE-VIEW
 @media (min-width: $mobile) {
     .newsletter-theme {
+        margin-top: 0;
          
         &__input {
             width: 450px;
